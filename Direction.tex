@@ -31,7 +31,7 @@
 
 \bibliographystyle{h-physrev3}
 
-\title{Directionality in Kilo-ton Scale Scintillating Neutrino Detectors}
+\title{Measuring Directionality in Double Beta Decay and Neutrino Interactions with Kiloton-Scale Scintillation Detectors}
 
 % All university affiliations addresses go here:
 \newcommand{\ucla}{\affiliation{University of California Los Angeles, Los Angeles, CA 90095, USA}}
@@ -41,12 +41,21 @@
 \author{C.~Aberle}\ucla
 \author{A.~Elagin}\chicago
 \author{M.~Wetstein}\chicago
+\author{H.~J.~Frisch}\chicago
 \author{L.~Winslow}\ucla
 
 \date{\today}
 
 \begin{abstract}
-Liquid scintillator detectors are some of the most prevalent detectors due to their good energy resolution and scalability to large volumes. This has made them particularly attractive for neutrino measurements, and this technology is at the heart of many of the most important measurements in this field. Their weakness is that they only provide information on the energy of the particle. The extraction of a second signal like the particle direction would greatly enhance the scientific reach of these detectors especially for searches for neutrinoless double-beta decay. In this paper, we develop a technique for extracting particle direction and evaluate different detector advances that could be used to make direction reconstruction a reality in a kilo-ton scale detector.
+Large liquid-scintillator-based detectors have proven to be
+exceptionally effective for low energy neutrino measurements due to
+their good energy resolution and scalability to large volumes. The
+addition of directional information using Cherenkov light and fast
+timing would greatly enhance the scientific reach of these detectors,
+especially for searches for neutrinoless double-beta decay. In this
+paper, we develop a technique for extracting particle direction and
+evaluate different detector advances that could be used to make
+direction reconstruction a reality in a kiloton-scale detector.
 \end{abstract}
 
 \pacs{23.40.$-$s, 21.10.Tg, 14.60.Pq, 27.60.$+$j}
@@ -54,30 +63,125 @@ Liquid scintillator detectors are some of the most prevalent detectors due to th
 \maketitle
 
 \section{Introduction}
-Liquid scintillator based detectors are responsible for several of the critical measurements that have cemented our understanding of three-neutrino oscillations. These measurements include KamLAND's measurement reactor antineutrino oscillation at a distance of $\sim$200~km\cite{kam2013}, Borexino's measurement of $^{7}$Be solar neutrino oscillation\cite{borexino} and most recently the short baseline reactor antineutrino experiments that measured oscillations due to $\theta_{13}$ at a distance of 1~km: Daya Bay\cite{dbtwo}, Double Chooz\cite{dctwo, dchydrogen}, and RENO\cite{reno}.  Scintillating neutrino detectors will continue to be important  for the next set of neutrino measurements from the determination of the neutrino mass hierarchy\cite{juno,reno50} to elastic scattering measurements\cite{isodarscatt} and sterile neutrino searches\cite{isodar,nist} and for non-proliferation applications\cite{nucifer, songs}. Their scalability to large volumes makes them particularly attractive for neutrinoless double-beta ($0\nu\beta\beta$) decay searches, and currently one of the best limits for the $0\nu\beta\beta$ half-life comes from KamLAND-Zen\cite{KZ0nu}.
+Liquid scintillator based detectors are responsible for several of the
+critical measurements that have determined our present understanding
+of neutrino masses and mixings. These measurements include KamLAND's
+measurement of reactor antineutrino oscillation at a distance of
+$\sim$200~km\cite{kam2013}, Borexino's measurement of $^{7}$Be solar
+neutrino oscillation\cite{borexino}, and most recently the short
+baseline reactor antineutrino experiments that measured oscillations
+due to $\theta_{13}$ at a distance of 1~km: Daya Bay\cite{dbtwo},
+Double Chooz\cite{dctwo, dchydrogen}, and RENO\cite{reno}.
+Scintillator-based neutrino detectors will continue to be important for the
+next set of neutrino measurements, from the determination of the
+neutrino mass hierarchy\cite{juno,reno50} to elastic scattering
+measurements\cite{isodarscatt} and sterile neutrino
+searches\cite{isodar,nist} and for non-proliferation
+applications\cite{nucifer, songs}.
 
-The advantage of liquid scintillators for measurements in the $\sim$1~MeV range is their simple scalability from  1~ton to 1~kiloton while providing energy resolutions of $\sim$5\%. This is roughly a factor of two better than water Cerenkov detectors, the other technology that is easily scaled to these  large masses. While the energy resolution is good due to the abundant scintillation light, this light is isotropic and does not retain the directional information of the primary particle.   In contrast, the direction of the particle can be reconstructed from the Cerenkov cones in water-based detectors, but the energy resolution rapidly degrades below $\sim$5~MeV.
+The scalability of these detectors to large volumes also makes them
+highly competitive for neutrinoless double-beta ($0\nu\beta\beta$)
+decay searches in which the final state consists of a
+positron-electron pair with energies in the few MeV range.  Currently
+one of the best limits for the $0\nu\beta\beta$ half-life comes from
+KamLAND-Zen\cite{KZ0nu}.
 
-In a scintillating detector, Cerenkov light is produced although most is absorbed and reemitted as part of the scintillation processes; however, some fraction retains its directional information. If this directional Cerenkov light can be isolated from the copious isotropic scintillation light then it may be possible to reconstruct the direction of the primary particle or at least determine something about the topography of the event. The addition of directionality is a powerful tool for background rejection and could be used to search for new physics especially in the case that $0\nu\beta\beta$ is observed. In this paper, we develop a technique for separating the Cerenkov and scintillation using the photon arrival times and evaluate different detector technologies that would allow the realization direction reconstruction in kilo-ton scale scintillating neutrino detectors.
+The advantage of liquid scintillators for measurements in the
+$\sim$1~MeV range is their scalability from 1~ton to 1~kiloton while
+providing energy resolutions of $\sim$5\%. This is roughly a factor of
+two better than water Cerenkov detectors, the other developed
+technology that can be economically scaled to these large
+masses. However, for scintillator-based detectors, while the energy
+resolution is good due to the abundance of light, the light is
+isotropic and does not retain the directional information of the
+primary particle.  In contrast, the direction of the particle can be
+reconstructed from the Cerenkov cones in water-based detectors,
+although the energy resolution rapidly degrades below $\sim$5~MeV. For
+double-beta decay in particular, but also for neutrino interactions,
+the directional information can be a strong suppressant of
+backgrounds.
 
+In a liquid-scintillation-based detector, Cerenkov light is also
+produced, although most is absorbed and re-emitted as part of the
+scintillation processes.  However, some fraction retains its
+directional information. If this directional Cerenkov light can be
+isolated from the copious isotropic scintillation light, it may be
+possible to reconstruct the direction of the primary particle or, in
+the case of double beta decay, to determine the existence and topology
+of the pair.  The addition of directionality is thus a powerful tool
+for background rejection.  In this paper, we develop a technique for
+separating the Cerenkov and scintillation using the photon arrival
+times and evaluate different detector technologies that would allow
+the realization direction reconstruction in kilo-ton scale
+scintillating neutrino detectors.
 
 \section{Light Production in Liquid Scintillators}
-Liquid scintillators are cocktails of aromatic hydrocarbons. When charged particles move through a scintillator, the molecules are excited, predominantly the the non-localized electrons in the $\pi$-bonds of the phenyl groups. Vibrational and rotational modes of the molecules are turned into heat within picoseconds through collisions with other molecules.  Within $\sim$10 picoseconds, the $\pi$-electrons de-excite to the first excited state from higher levels through radiationless transitions. The first excited state de-excites through photon emission. There are two characteristic times for this de-excitation depending if the singlet state or the triplet state was excited.  The singlet state will de-excite within nanoseconds while the triplet state de-excites on the order of 10's or 100's of nanoseconds. These two processes are fluorescence and phosphorescence respectively. The exact time constants for these processes are determined by the composition of the scintillator.
+Liquid scintillators are cocktails of aromatic hydrocarbons. When
+charged particles move through a scintillator, the molecules are
+excited, predominantly the the non-localized electrons in the
+$\pi$-bonds of the phenyl groups~\cite{scintillator_ref}. Vibrational
+and rotational modes of the molecules are turned into heat within
+picoseconds through collisions with other molecules.  Within $\sim$10
+picoseconds, the $\pi$-electrons de-excite to the first excited state
+from higher levels through radiationless transitions. The first
+excited state de-excites through photon emission. There are two
+characteristic times for this de-excitation, depending if the singlet
+state or the triplet state was excited.  The singlet state will
+de-excite within nanoseconds while the triplet state de-excites on the
+order of 10's or 100's of nanoseconds. These two processes are
+fluorescence and phosphorescence respectively. The exact time
+constants for these processes are determined by the composition of the
+scintillator.
 
-The molecules in liquid scintillators are not isolated. Radiationless processes transfer energy between the molecules. The probability of energy transfer between molecules increases as the overlap between the molecule's absorption and emission spectra increase. The absorption and emission spectra overlap at some level for all molecules. Therefore, if there is only one type of molecule in the scintillator cocktail, the light output would be reduced due to inefficiencies in the energy transfer through multiple absorption and reemission processes. Aromatic solutes or fluors are added to the primary solvent to shift the wavelength of the photons to longer wavelengths where the scintillator is more transparent. This wavelength-shifting is also used to match the quantum efficiency as a function of wavelength for the photodetectors being used. One typical scintillator mixture uses pseudo-cumene as the solvent with 1-5~g/L of PPO as the fluor. This mixture has a peak emission at about 400~nm where photomultiplier tubes (PMTs) are most sensitive and the pseudo-cumene is relatively transparent.
+The molecules in liquid scintillators are not isolated. Radiationless
+processes transfer energy between the molecules. The probability of
+energy transfer between molecules increases as the overlap between the
+molecule's absorption and emission spectra increase. The absorption
+and emission spectra overlap at some level for all
+molecules. Consequently if there is only one type of molecule in the
+scintillator cocktail, the light output would be reduced due to
+inefficiencies in the energy transfer through multiple absorption and
+reemission processes. Aromatic solutes or fluors are added to the
+primary solvent to shift the wavelength of the photons to longer
+wavelengths where the scintillator is more transparent. This
+wavelength-shifting is also used to match the quantum efficiency as a
+function of wavelength for the photodetectors being used. One typical
+scintillator mixture uses pseudo-cumene as the solvent with 1-5~g/L of
+PPO as the fluor. This mixture has a peak emission at about 400~nm
+where bialkali photomultiplier tubes (PMTs) are most sensitive and the
+pseudo-cumene is relatively transparent.
 
-A good liquid scintillator will produce $\sim$10,000 photons isotropically per MeV of deposited energy. Although less abundant, if a particle is moving faster than the speed of light in the medium then Cerenkov light will be produced as well. This light is emitted in a cone pointed in the direction of the particles trajectory and with a continuous spectrum wavelengths weighted toward shorter wavelengths but extending well into the red,
+A good liquid scintillator will produce $\sim$10,000 photons
+isotropically per MeV of deposited energy. Although less abundant,
+Cerenkov light will be produced as well if a particle is moving faster
+than the speed of light in the medium.  This light is emitted in a
+cone pointed in the direction of the particles trajectory and with a
+continuous spectrum weighted toward shorter wavelengths
+but extending well into the red. The spectrum is described by:
 \begin{equation}
 \label{eqCerenkov}
 \frac{dN}{d\lambda dx} = \frac{2 \pi \alpha Z^2}{\lambda^2} ( 1 - \frac{1}{\beta^2 n(\lambda)^2} )
 \end{equation}
-where $n(\lambda)$ is the wavelength-dependent index of refraction and $\beta$ is the velocity of the incoming particle. The Cerenkov light produced at wavelengths shorter than the absorption cutoff of the scintillator will be absorbed and re-emitted as isotropic light, but wavelengths longer than this cutoff will propagate across the detector retaining their directional information, roughly 60 photons per MeV assuming a 400~nm absorption cutoff\cite{qdot}. These undisturbed Cerenkov photons will have timing determined by the group velocity in the liquid,
+where $n(\lambda)$ is the wavelength-dependent index of refraction and
+$\beta$ is the velocity of the incoming particle. The Cerenkov light
+produced at wavelengths shorter than the absorption cutoff of the
+scintillator will be absorbed and re-emitted as isotropic light, but
+wavelengths longer than this cutoff will propagate across the
+detector, retaining their directional information. The yield is
+roughly 60 photons per MeV, assuming a 400~nm absorption
+cutoff\cite{qdot}. These undisturbed Cerenkov photons will have timing
+determined by the group velocity in the liquid,
 \begin{equation}
 \label{eqGroup}
 v_{g}(\lambda) = \frac{c_{vacuum}}{n(\lambda) + dn(\lambda)/dlog(\lambda)}.
 \end{equation}
-These longer wavelengths Cerenkov photons arrive in principle before the scintillation light which is slowed by both the scintillation processes and the shorter wavelengths involved. Thus, with sufficient timing resolution and sensitivity to longer wavelength, it should be possible to separate the directional Cerenkov light and the isotropic scintillation light in time and then reconstruct the direction of the initial particle.
-
+The longer wavelengths Cerenkov photons typically arrive before
+the scintillation light, which is slowed by both the scintillation
+processes and the shorter wavelengths involved. Thus, with sufficient
+timing resolution and sensitivity to longer wavelength, it should be
+possible to separate the directional Cerenkov light and the isotropic
+scintillation light in time and then reconstruct the direction of the
+initial particle.
 
 \section{Geant4 Simulation}
 In order to study the effects relevant to directionality reconstruction in liquid scintillators, a Geant4 \cite{geant4one,geant4two} simulation has been set up. The presented simulation application has been developed using standard Geant4 functionality for the optical model of the liquid scintillator. Version Geant4.9.6 is used and the simulation application has been built from a customized official application example. The simulation is kept simple to provide generally applicable information about the main factors in directionality reconstruction. 
