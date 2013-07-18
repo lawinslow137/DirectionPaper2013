@@ -274,24 +274,24 @@ Recently, the use of quantum dots (QDs) in liquid scintillators has been studied
 
 In order to isolate the effect of a different emission spectrum, the other simulation settings, including the KamLAND absorption spectrum are kept unchanged. Compared to the default case shown in FIG. \ref{time_plot_comparison} (a) the separation is worse because the scintillation light wavelengths are higher than in the KamLAND emission spectrum. However, advances in the production of commercial quantum dot samples could yield quantum dots which have similar, single peak emission shapes at lower wavelengths. This case has been simulated using the same spectral shape of the measured Trilite450 emission but shifted to lower wavelengths such that the emission peak is centered at 384~nm. This peak emission value has been measured for other types of QDs, however with a much more pronounced tail \cite{tbd}. The resulting PE time distribution shows a slightly clearer separation of Cerenkov and Scintillation light. After the 34.0~ns cut on the TTS-smeared PE time we obtain a higher Cerenkov/scintillation ratio compared to the default simulation: The number of Cerenkov-induced PE after the time cut is unchanged while the number of PEs coming from scintillation light is decreased due to the higher average photon travel times.  
 
-\section{Energy Dependence and Detector Size}
-\label{edep_size_sec}
-include this? 
-
-The number of Cerenkov photons decreases disproportionally with decreasing electron energy. The number of PEs after the 34.0~ns time cut for 1~MeV electrons is 37 PE from scintillation and 13 PE from Cerenkov light. This illustrates that directionality reconstruction benefits from higher initial energies but even at 1~MeV there might be accessible directionality information.  
-
-An additional set of simulations of a 0.65~m diameter ($\approx$ 1~m$^3$) detector with otherwise default parameters was performed. In the smaller detector the chromatic dispersion is not as important and absorption in the scintillator bulk is reduced. The latter effect increases the absolute number of photoelectrons. The former effect, on one hand, reduces the separation in time between Cerenkov and Scintillation light. On the other hand, it reduces the broadening of both time distributions which helps more sophisticated vertex and track reconstruction with the help of fast photodetectors like for example the LAPPDs. 
-
-%tbd (calculate numbers): However, with the simplified effective vertex reconstruction and a time cut of 3.4~ns we get  PEs from scintillation and 87 PEs from Cerenkov. The time cut was adjusted such that the fraction of selected PEs from Cerenkov light matches the fraction in the large detector ($\approx$ 58\%). The QD spectrum discussed in section \ref{scintillator_emission_sec} (both shifted and unshifted) did not change the PE time distribution significantly. We also simulated the red-sensitive photocathode discussed in section \ref{detector_wavelength_response_sec} in the small detector. The amount of PE increases again significantly and with the 3.265~ns time cut the number of PE coming from Cerenkov light is 182 while the number of PE from scintillation light is 96. 
-
-In summary, the photodetector properties (TTS and QE) become more important relative to the scintillator emission and absorption spectra when the detector size is decreased from 6.5~m to 0.65~m.
-
-
 %%idea: use (some) PMTs with high QE for high lambda (and/or low QE for normal lambda). 
 %% add some more info why we are interested in a smaller detector
 %% motivation: Daedalus/ISODAR (?), 0nuBB 
 \section{Reconstruction}
 \label{reconstruction_sec}
+
+\begin{figure*}[tbh]
+        \begin{center}
+        \subfigure{\includegraphics[scale=0.295]{graphs/hDirX_v1.pdf}}
+        \subfigure{\includegraphics[scale=0.295]{graphs/hDirY_v1.pdf}}
+        \subfigure{\includegraphics[scale=0.295]{graphs/hDirZ_v1.pdf}}
+        \subfigure{\includegraphics[scale=0.295]{graphs/hVtxX_v1.pdf}}
+        \subfigure{\includegraphics[scale=0.295]{graphs/hVtxY_v1.pdf}}
+        \subfigure{\includegraphics[scale=0.295]{graphs/hVtxZ_v1.pdf}}
+        \caption[]{We need a caption}
+        \end{center}
+\end{figure*}
+
 WCSimAnalysis is a Water Cherenkov reconstruction package developed by Andrew Blake for the Long Baseline Neutrino Experiment (LBNE collaboration). It provides a framework for generic event cleaning, track reconstruction, and particle id, and it comes equipped with variety of pre-built algorithms. A collaboration between Iowa State, the University of Chicago, and Argonne National Laboratory has continued adding to the code, developing new track-fitting techniques for Water Cherenkov detectors built around the unique capabilities of microchannel plate photodetectors (MCPs): timing resolutions below 100 picoseconds and imaging resolutions below a centimeter. In this paper, we use only the simple, low-level reconstruction tools native to the package, though in future works we hope to implement more sophisticated techniques.
 
 The simplest approach to vertex reconstruction, used in this paper, is commonly referred to as a “point fit”. It assumes that, to first order, the light was emitted a single point in space-time (x0,y0,z0,t0). In reality, the light is emitted along the extended, multi-scattered track of the electron. However, at the energies discussed in this paper, the extent of the electron track is small (a few cm) compared to the scale of the detector, which has a radius of 6 meters. It is also small compared with the vertex resolutions typical of experiments with this scale. As starting point, the assumption works well. 
@@ -301,19 +301,6 @@ The first algorithm we use to find a seed vertex relies on exact numerical calcu
 Once the 80 vertex candidates have been solved for, we test the goodness of each candidate and select the one that best fits the full ensemble of hits. Distances are calculated between each hit and the candidate point-source. From these distances, we calculate the transit time, given the speed of light in our scintillator medium. This transit time plus the t0 of the 4-vertex provides a predicted arrival time for each hit. The “time residual” is the calculated as difference between the predicted and the measured arrival time, given the vertex candidate. Since we assume a point-source in this paper, we use what we call the “simple time residual”, as distinct from the “extended time residual”, which assumes an extended, track-like geometry. The distribution of time residuals for each hit with respect to a vertex candidate has a width that is minimized when the hypothesis vertex is close to the true vertex. The t0 of the vertex candidate is left to float, and is adjusted to maximize the likelihood comparison with a Gaussian test function. The width of that gaussian test function is hand optimized to correspond with the width of the “best fit”. The vertex candidate with the largest maximum is selected to serve as the best candidate seed vertex. Once a single best seed vertex has been chosen, the same time-residual figure-of-merit is used in a MINUIT-based fit over a continuum of possible vertices in the neighborhood of the seed.
 
 Once the vertex fitting is completed, we determine the direction by taking the centroid of all vectors pointing from the fitted event vertex and the hits on the detector. Since our initial time cut greatly enhances the purity of the Cherenkov light in this sample of hits and, since the Cherenkov light is directional (compared to the isotropic scintillation light), this fit provides a good measure of the track direction. This approach does not rely on the highly constrained Cherenkov geometry of the event, which contains further information. Future work will focus on better algorithms. Nonetheless, for a proof-of-principles, this method works sufficiently well..
-
-\begin{figure}
-        \begin{center}
-        \includegraphics[scale=0.20]{graphs/hDirX.pdf}
-        \includegraphics[scale=0.20]{graphs/hDirY.pdf}
-        \includegraphics[scale=0.20]{graphs/hDirZ.pdf}	
-         \includegraphics[scale=0.20]{graphs/hVtxX.pdf}
-        \includegraphics[scale=0.20]{graphs/hVtxY.pdf}
-        \includegraphics[scale=0.20]{graphs/hVtxZ.pdf}	
-        \caption[]{ We need a caption.}
-        \end{center}
-\end{figure}  
-
 
 \section{Conclusion}
 This is going to work.
