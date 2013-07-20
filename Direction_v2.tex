@@ -6,7 +6,7 @@
 % Please follow these instructions to use line numbering package (lineno.sty):
 %
 %   http://fourforces.wordpress.com/2008/04/24/add-line-numbers-using-linenosty-in-revtex-4/
-%
+%Cherenkov
 
 \RequirePackage{lineno}
 
@@ -27,7 +27,7 @@
 \newcommand{\GEANT}{GEANT4}
 \hyphenation{KamLAND}
 
-\linenumbers
+%\linenumbers
 
 \begin{document}
 
@@ -88,36 +88,36 @@ The scalability of these detectors to large volumes also makes them
 highly competitive for neutrino-less double-beta ($0\nu\beta\beta$)
 decay searches in which the final state consists of a pair of
 electrons with energies in the few MeV range.  Currently one of the
-best limits for the $0\nu\beta\beta$ half-life comes from
+best limits for the $0\nu\beta\beta$ half-life comes from the scintillating detector
 KamLAND-Zen\cite{KZ0nu}.
 
 The advantage of liquid scintillators for measurements in the
 $\sim$1~MeV range is their scalability from 1~ton to 1~kiloton while
 providing energy resolutions of $\sim$5\%. This is roughly a factor of
-two better than water Cerenkov detectors, the other developed
+two better than water Cherenkov detectors, the other developed
 technology that can be economically scaled to these large
 masses. However, for scintillator-based detectors, while the energy
 resolution is good due to the abundance of light, the light is
 isotropic and does not retain the directional information of the
 primary particle.  In contrast, the direction of the particle can be
-reconstructed from the Cerenkov cones in water-based detectors,
+reconstructed from the Cherenkov cones in water-based detectors,
 although the energy resolution rapidly degrades below $\sim$5~MeV. For
 double-beta decay in particular, but also for neutrino interactions,
 the directional information can be a strong suppressant of
 backgrounds.
 
-In a liquid-scintillation-based detector, Cerenkov light is also
+In a liquid-scintillation-based detector, Cherenkov light is also
 produced, although most is absorbed and re-emitted as part of the
 scintillation processes.  However, some fraction retains its
-directional information. If this directional Cerenkov light can be
+directional information. If this directional Cherenkov light can be
 isolated from the copious isotropic scintillation light, it may be
 possible to reconstruct the direction of the primary particle or, in
 the case of double beta decay, to determine the existence and topology
 of the pair.  The addition of directionality is thus a powerful tool
 for background rejection.  In this paper, we develop a technique for
-separating the Cerenkov and scintillation using the photon arrival
+separating the Cherenkov and scintillation light using the photon arrival
 times and evaluate different detector technologies that would allow
-the realization direction reconstruction in kilo-ton scale
+the realization of direction reconstruction in kilo-ton scale
 scintillating neutrino detectors.
 
 \section{Light Production in Liquid Scintillators}
@@ -158,42 +158,41 @@ pseudo-cumene is relatively transparent.
 
 A good liquid scintillator will produce $\sim$10,000 photons
 isotropically per MeV of deposited energy. Although less abundant,
-Cerenkov light will be produced as well if a particle is moving faster
+Cherenkov light will be produced as well if a particle is moving faster
 than the speed of light in the medium.  This light is emitted in a
 cone centered on the direction of the particle trajectory, and with a
 continuous spectrum weighted toward shorter wavelengths
-but extending well into the red. The spectrum is described by~\cite{Cherenkov_spectrum}:
+but extending well into the red. The spectrum is described by~\cite{Cherenkov34}:
 \begin{equation}
-\label{eqCerenkov}
-\frac{dN}{d\lambda dx} = \frac{2 \pi \alpha Z^2}{\lambda^2} ( 1 - \frac{1}{\beta^2 n(\lambda)^2} )
+\label{eqCherenkov}
+\frac{dN}{d\lambda dx} = \frac{2 \pi \alpha Z^2}{\lambda^2} \left [ 1 - \frac{1}{\beta^2 n(\lambda)^2} \right ]
 \end{equation}
 where $n(\lambda)$ is the wavelength-dependent index of refraction and
-$\beta$ is the velocity of the incoming particle. The Cerenkov light
+$\beta$ is the velocity of the incoming particle. The Cherenkov light
 produced at wavelengths shorter than the absorption cutoff of the
 scintillator will be absorbed and re-emitted as isotropic light, but
 wavelengths longer than this cutoff will propagate across the
 detector, retaining their directional information. The yield is
 roughly 60 photons per MeV, assuming a 400~nm absorption
-cutoff\cite{qdot}. These undisturbed Cerenkov photons will have timing
+cutoff\cite{qdot}. These undisturbed Cherenkov photons will have timing
 determined by the group velocity \cite{group_velocity_article} in the liquid,
 \begin{equation}
 \label{eqGroup}
 v_{g}(\lambda) = \frac{c_{vacuum}}{n(\lambda) - dn(\lambda)/d\textnormal{log}(\lambda)}.
 \end{equation}
-The longer wavelength Cerenkov photons typically arrive before
+The longer wavelength Cherenkov photons typically arrive before
 the scintillation light, which is slowed by both the scintillation
 processes and the shorter wavelengths involved. Thus, with sufficient
 timing resolution and sensitivity to longer wavelengths it should be
-possible to separate the directional Cerenkov light and the isotropic
+possible to separate the directional Cherenkov light and the isotropic
 scintillation light, and then to reconstruct the direction of the
 initial particle.
 
 \section{Geant4 Simulation}
 In order to study the effects relevant to directional
 reconstruction in liquid scintillators, a 
-\GEANT~\cite{geant4one,geant4two} simulation has been set up. The 
-simulation has been developed using \GEANT Version 4.9.6 for the
-liquid scintillator optical model, in which optical photons are
+\GEANT~\cite{geant4one,geant4two} simulation has been constructed. The 
+simulation uses \GEANT~Version 4.9.6 with the default liquid scintillator optical model, in which optical photons are
 assigned the group velocity in the wavelength region of normal
 dispersion.
 
@@ -201,16 +200,14 @@ dispersion.
         \begin{center}
         \includegraphics[scale=0.25]{graphs/detector_view.png}
         \caption[]{Two back-to-back electrons with 1.41~MeV each
-        (equally divided energy of $^{116}$Cd $0\nu\beta\beta$ decay) at
+        (equally divided energy of $^{116}$Cd~$0\nu\beta\beta$ decay) at
         the center of the sphere with initial directions along the x
-        and -x-axis. Only Cerenkov photons are drawn to illustrate the
+        and -x-axis. Only Cherenkov photons are drawn to illustrate the
         directionality of the event. \label{detector_view}}
         \end{center}
 \end{figure}
 
-The detector geometry is a sphere of 6.5~m diameter filled
-with liquid scintillator doped with $^{116}$Cd (see Figure
-\ref{detector_view}). The default
+The detector geometry is a sphere of 6.5~m diameter filled with scintillator. FIG.~\ref{detector_view} shows the geometry and the Cherenkov light from an example $^{116}$Cd $0\nu\beta\beta$ event. The default
 scintillator properties have been chosen to match the KamLAND
 scintillator \cite{kamland2003}: 80~\% n-Dodecane, 20~\% Pseudocumene
 (1,2,4-Trimethylbenzene) and 1.52~g/l PPO (2,5-Diphenyloxazole). The
@@ -218,7 +215,7 @@ scintillator properties implemented in the simulation include the
 atomic composition and density ($\rho$ = 0.78~g/ml), the
 wavelength-dependent attenuation length \cite{tajimaMaster} and
 refractive index \cite{OlegThesis}, the scintillation emission
-spectrum, emission rise time ($\tau_r$ = 1.0~ns) and emission decay
+spectrum\cite{tajimaMaster}, emission rise time ($\tau_r$ = 1.0~ns) and emission decay
 time constants ($\tau_{d1}$ = 6.9~ns and $\tau_{d2}$ = 8.8~ns with
 relative weights of 0.87 and 0.13)
 \cite{tajimaThesis}, scintillator light yield (LY, 9030 photons/MeV)
@@ -251,24 +248,25 @@ same photocathode type with similar quantum efficiency.
         of the transit-time spread (TTS) for the simulation
         of 1000 electrons (5~MeV) with different values of the TTS and
         wavelength response. PEs from
-        Cerenkov light (black, solid line) and scintillation light
+        Cherenkov light (black, solid line) and scintillation light
         (red, dotted line) are
         compared. The dashed vertical line illustrates a time cut at
         34~ns. (a) Default simulation: bialkali photocathode and TTS =
         0.1~ns ($\sigma$). After the 34.0~ns time cut we get 171~PEs
-        from scintillation and 108~PEs from Cerenkov light. (b)
+        from scintillation and 108~PEs from Cherenkov light. (b)
         Default simulation settings except for TTS = 1.28~ns (KamLAND
         17 in. PMTs). After the 34.0~ns time cut we get 349~PEs from
-        scintillation and 88~PEs from Cerenkov light. (c) Default
+        scintillation and 88~PEs from Cherenkov light. (c) Default
         simulation settings except for a GaAsP photocathode. After the
         34.0~ns time cut we get 226~PEs from scintillation and 229~PEs
-        from Cerenkov light. \label{time_plots_comparison}}
+        from Cherenkov light. \label{time_plots_comparison}}
         \end{center}
 \end{figure*}
 
 Before the simulation results for different simulation settings are
-discussed in the following sections, we highlight the effects which
-contribute to the timing of the scintillator detector system. First,
+discussed, we note that  we concentrate on 5~MeV single electrons since this is the energy where scintillating detectors become more practical than water Cherenkov detectors. 
+We now highlight the effects which
+contribute to the timing of the scintillator detector system.  First,
 the simulated travel time of the initial 5~MeV electron is between
 0.10 and 0.15~ns, while the travel distance is about 3~cm. Second, the
 scintillation light emission follows a distribution characterized by
@@ -292,10 +290,10 @@ extracted results from a simplified simulation of 5~MeV electrons at
 the center of the sphere where we used instantaneous scintillation
 emission with the quantum-efficiency applied, but not including
 the transit-time spread. The true hit time distributions of
-photoelectrons were analyzed for scintillation light and Cerenkov
-light separately. Photoelectrons coming from Cerenkov light are on
+photoelectrons were analyzed for scintillation light and Cherenkov
+light separately. Photoelectrons coming from Cherenkov light are on
 average created about 0.5~ns earlier than PEs from scintillation
-light. The RMS values from PE time distributions for Cerenkov and
+light. The RMS values from PE time distributions for Cherenkov and
 scintillation light are both about 0.5~ns. Note that these numbers
 include the effect of the finite electron travel time.
 
@@ -306,103 +304,91 @@ default TTS of 0.1~ns ($\sigma$) is a value which can be achieved with
 the large area picosecond photodetectors
 (LAPPDs)\cite{LAPPDSum,LAPPDTDR} and possibly hybrid photodetectors
 (HPDs)\cite{hpdThesis}; even significantly lower TTS numbers are
-realistic with the LAPPD. The uncertainties in the vertex
-reconstruction are reflected in broadening and distortions of the time
-spectra.
+realistic with the LAPPD. A similar effect to the smearing due to the TTS, is the effect of the uncertainties in the vertex
+reconstruction. 
 
 In Sections \ref{detector_timing_sec} to
 \ref{scintillator_emission_sec}, we study the
-photoelectron timing for different detector configurations. We follow
-the idea to increase discrimination between Cerenkov and scintillation
-light by accurate detector timing. The main relevant quantities
-provided by the \GEANT simulation are the photoelectron hit positions
+photoelectron timing for different detector configurations. We focus on
+the idea to increase discrimination between Cherenkov and scintillation
+light by using improved detector timing. The main relevant quantities
+provided by the \GEANT~simulation are the photoelectron hit positions
 and the detection times after the TTS resolution has been applied. In
-Section~\ref{reconstruction_sec} these quantities are used for event
+Section~\ref{reconstruction_sec} these quantities are then used for event
 reconstruction.
 
 \section{Detector Timing}
 \label{detector_timing_sec}
 
 We first discuss results for the default simulation settings described
-in the previous section. Figure \ref{time_plots_comparison} (a) shows
+in the previous section. FIG.~\ref{time_plots_comparison} (a) shows
 the TTS-smeared photoelectron detection times for 1000 simulated
 electrons with 5~MeV energy in the center of the detector with initial
 momentum directions coinciding with the x-axis. The photoelectrons
-induced by Cerenkov light arrive earlier, as expected due to the
-instantaneous emission and the higher average photon speed longer
-wavelengths) compared to scintillation light. There is however
+induced by Cherenkov light arrive earlier, as expected due to the
+instantaneous emission and the higher average photon speed compared to scintillation light. There is however
 significant overlap of the two arrival time distributions.  
 
-In order
-to compare simulations with different parameters, a fixed time cut $t
-\leq$ 34.0~ns  is applied using the truth information 
-instead of an event-by-event time reconstruction (see Section
-\ref{reconstruction_sec} for reconstruction results). For the default
-simulation case, the number of PEs per event coming from Cerenkov
-light after the 34.0~ns time cut (108) is 98~\% of the total number of
-PEs from Cerenkov light (110). For scintillation the number of PEs
-after the time cut (171) is only 3.2~\% of the total
+In order to compare simulations with different parameters, a fixed time cut $t
+\leq$ 34.0~ns  is applied using the truth information to isolate the Cherenkov light in this early time window. For the default
+simulation case, the number of PEs per event coming from Cherenkov
+light in the early time window (108) is 98~\% of the total number of
+PEs from Cherenkov light (110). For scintillation, the number of PEs (171) is only 3.2~\% of the total
 scintillation-induced PEs (5445). This indicates the effectiveness of
-a time cut to separate Cerenkov light from scintillation light. An
+a time cut to separate Cherenkov light from scintillation light. An
 important figure of merit when comparing different simulation settings
-is the ratio of Cerenkov/scintillation induced PE after the 34.0~ns
-time cut since a higher ratio means more directional information per
-PE. The ratio is 0.63 for the default settings. Note that this ratio
-depends on the time cut, which will be optimized in future work
-together with the absolute number of PEs per event passing the cut.
+is the ratio of Cherenkov/scintillation induced PE in the early time window since a higher ratio means more directional information per
+PE. The ratio is 0.63 for the default settings. 
 
 \begin{figure}
         \begin{center}
-        \includegraphics[scale=0.40]{graphs/cos_psi_comp_h.pdf}
+        \includegraphics[scale=0.40]{graphs/cos_psi_34_h.pdf}
         \caption[]{The angular distribution of photoelectron hits
         relative to the original electron direction $\cos(\Psi) =
         x_{hit}/\vec{r}_{hit}$. The sample consists of 1000 events
         with a 5~MeV electron produced at the detector center. Default
-        simulation settings are used and both Cerenkov and
+        simulation settings are used and both Cherenkov and
         scintillation light are included. } 
-        \label{cerenkov_cone}
+        \label{Cherenkov_cone}
         \end{center}
 \end{figure}
 
-Figure \ref{cerenkov_cone} displays the angular distribution of PE
+FIG.~\ref{Cherenkov_cone} displays the angular distribution of PE
 hits after the time cut. Although this time cut is a simplification of actual time
 reconstruction effects, we can use it to indicate the spatial
-distribution of hits after timing information has been used to
-separate Cerenkov and scintillation light. The Cerenkov ring structure
+distribution of hits in this early time window. The Cherenkov ring structure
 can be clearly seen in the peak at about 46\textdegree, demonstrating
-that the directional signal conveyed by the Cerenkov photons is not
+that the directional signal conveyed by the Cherenkov photons is not
 erased by scattering of the initial 5~MeV electrons.
 
 When the 17 inch KamLAND PMTs \cite{tajimaMaster,kume_1983} (TTS =
 1.28~ns) are used in the simulation, the broadening of the time
-distributions leads to a strongly decreased ratio of Cerenkov over
-scintillation light (0.25) after the 34~ns time cut (see
-FIG. \ref{time_plots_comparison} (b)). This shows that a low
+distributions leads to a strongly decreased ratio of Cherenkov over
+scintillation light (0.25) for $t<34$~ns (see
+FIG.~\ref{time_plots_comparison} (b)). This shows that a low
 photodetector TTS is critical for directionality reconstruction and
 motivates the use of novel detector types.
 
 \section{Detector Wavelength Response}
 \label{detector_wavelength_response_sec} 
 In addition to improving the photodetector TTS, optimization of the
-wavelength-dependent QE is promising. Since Cerenkov photons which
+wavelength-dependent QE is promising. Since Cherenkov photons which
 passed 6.5~m of scintillator have higher average wavelengths than
 scintillation photons, a photodetector which is more sensitive at high
 wavelengths increases not only the absolute number of PEs but also the
-ratio between Cerenkov- and scintillation-induced PEs. 
+ratio between Cherenkov- and scintillation-induced PEs. 
 
 We have run the simulation with the QE of an extended red-sensitive
-GaAsP photocathode (Hamamatsu R3809U-63 QE data was used).  Figure
-\ref{time_plots_comparison} (c) shows the results for the modified
+GaAsP photocathode (Hamamatsu R3809U-63 QE data was used).  FIG.~\ref{time_plots_comparison} (c) shows the results for the modified
 simulation with high QE in the red spectral region. The higher
-absolute number of photo-electrons coming from Cerenkov light (factor
-of $\approx$ 2) and the increased Cerenkov/scintillation ratio (1.6)
-after the time cut would significantly enhance the directionality
+absolute number of photo-electrons coming from Cherenkov light (factor
+of $\approx$ 2) and the increased Cherenkov/scintillation ratio (1.6) in the early time window would significantly improve the directionality
 reconstruction.
 
 \section{Scintillator Emission Spectrum}
 \label{scintillator_emission_sec}
 An alternative route towards increasing the separation in time between
-Cerenkov and scintillation photon hits is the tuning of the
+Cherenkov and scintillation photon hits is the tuning of the
 scintillator emission spectrum. Recently, the use of quantum dots
 (QDs) in liquid scintillators has been studied as a possibility to
 improve future large scale neutrino experiments \cite{qdot2}. One
@@ -415,7 +401,7 @@ symmetric peak centered around 461~nm with FWHM = 29~nm.
 In order to isolate the effect of a different emission spectrum, the
 other simulation settings, including the KamLAND absorption spectrum,
 are kept unchanged. Compared to the default case shown in
-FIG. \ref{time_plots_comparison} (a) the separation is worse (as
+FIG.~\ref{time_plots_comparison} (a) the separation is worse (as
 expected) because the scintillation light wavelengths are higher than
 in the KamLAND emission spectrum. However, advances in the production
 of commercial quantum dot samples could yield quantum dots which have
@@ -425,11 +411,11 @@ core-shell quantum dot emission but shifted to lower wavelengths such
 that the emission peak is centered at 384~nm. This peak emission value
 has been measured for other types of QDs, however with a much more
 pronounced tail \cite{qdot2}. The resulting PE time distribution shows
-improved separation of Cerenkov and scintillation light compared to
+improved separation of Cherenkov and scintillation light compared to
 the default simulation. After the 34.0~ns cut on the TTS-smeared PE
-time we obtain a higher Cerenkov/scintillation ratio of 0.86 (107 PE
-from Cerenkov light and 124 PE from scintillation). The number of
-Cerenkov-induced PEs after the time cut is unchanged while the number
+time we obtain a higher Cherenkov/scintillation ratio of 0.86 (107 PE
+from Cherenkov light and 124 PE from scintillation). The number of
+Cherenkov-induced PEs after the time cut is unchanged while the number
 of PEs coming from scintillation light is decreased due to the higher
 average photon travel times.
 
@@ -450,7 +436,7 @@ average photon travel times.
         (5MeV). In the simulation the electrons are produced along the
         X-axis, $\frac{\vec{p}}{|\vec{p}|}$ = (1,0,0), and originate
         from the center of the 6.5m-diameter detector, $\vec{r}$ =
-        (0,0,0). Only photons with arrival time of $T<$ 34~ns are used
+        (0,0,0). Only photons with arrival time of $t<$ 34~ns are used
         in the reconstruction. The quantum efficiency of the bialkali
         photocathode is taken into account. (Bottom) The reconstructed
         vertex position, $(x,y,z)$, for the same simulation.}
@@ -458,25 +444,18 @@ average photon travel times.
 \end{center}
 \end{figure*}
 
-
-WCSimAnalysis is a Water Cherenkov reconstruction package developed by
-Andrew Blake for the Long Baseline Neutrino Experiment (LBNE
-collaboration)~\cite{Blake}. It provides a framework for generic event
+The timing studies show that in the early time window, $t\leq$ 34.0~ns, Cherenkov light dominates. In this paper, we apply reconstruction tools for a water Cherenkov detector, WCSimAnalysis, with only small modifications to remove water specific properties, to the problem of reconstructing the position and direction of 5~MeV electrons from this early light.  
+WCSimAnalysis is a Water Cherenkov reconstruction package developed for the Long Baseline Neutrino Experiment (LBNE
+collaboration)\cite{Blake}. It provides a framework for generic event
 cleaning, track reconstruction, and particle identification, and 
-comes equipped with variety of pre-built algorithms. A collaboration
-between Iowa State, the University of Chicago, and Argonne National
-Laboratory has continued adding to the code, developing new
-track-fitting techniques for Water Cherenkov detectors based on
+comes equipped with variety of pre-built algorithms. It is continuing to be expanded using new
+track-fitting techniques for Water Cherenkov detectors\cite{Sanchez2012525} based on
 advanced photosensors with sub-cm imaging capabilities and timing
-resolutions below 100
-picoseconds~\cite{{fasttiming},{LAPPDcollab}}. In this paper, we use
-only the reconstruction tools native to the package,
-though in future work we hope to implement more sophisticated
-algorithms.
+resolutions below 100 picoseconds\cite{LAPPDSum,LAPPDTDR}. 
 
 The results presented in this paper rely on a simple vertex
 reconstruction algorithm, commonly known as a ``point
-fit''~\cite{SuperKalgo}. It assumes that all of the scintillation and
+fit''\cite{SuperKalgo}. It assumes that all of the scintillation and
 Cherenkov light is emitted from a single point in space-time
 $(x_0,y_0,z_0,t_0)$. In actuality, the light is emitted along an
 extended, multi-scattered electron track. However, at the energies
@@ -487,33 +466,29 @@ photon transit distances.
 The first step of the reconstruction process relies on exact numerical
 calculations of vertex candidates from quadruplets of hits. Given a
 single point source, we need four constraints to solve for the four
-unknowns of the vertex ($x,y,z, and t_0$)~\cite{Smy}. This approach
+unknowns of the vertex $(x,y,z,t_0)$\cite{Smy}. This approach
 would provide an exact solution in the case of four prompt,
-unscattered photons originating from a common point. However, many of
+un-scattered photons originating from a common point. However, many of
 these randomly chosen quadruplets will produce anomalous solutions due
 to real world effects such as delayed emission and deviations from the
 point-like geometry. Nonetheless, we found that any chosen subset of
 400 quadruplets was a sufficiently large ensemble to assure that some
 solutions will be close to the true vertex.
 
-Once a small set of vertex candidates has been found, we test the
+Once a set of vertex candidates has been found, we test the
 goodness of each vertex and select the one that best fits the full
 ensemble of photon hits. The goodness of fit is determined based on
 the distribution of an observable known as the ``point time
-residual''~\cite{SuperKalgo}. The point time residual is calculated by
+residual''\cite{SuperKalgo}. The point time residual is calculated by
 taking the difference between the measured time of a photon hit, and
 the predicted time of the hit, given its distance from the vertex
-hypothesis, the speed of light in the scintillator (see
-Equ.\ref{eqGroup} , and the hypothesized $t_0$ of the event. The width
+hypothesis, a single effective speed of light in the scintillator, and the hypothesized $t_0$ of the event. The width
 of the time residual distribution over all hits is minimized when the
 hypothesized vertex is near the true vertex. Based on this figure of
 merit, we select the vertex with the narrowest time residual
-distribution from among the 400 candidates. This best candidate is
-used as the seed value for a MINUIT-based optimization~\cite{MINUIT},
-where the vertex is allowed to vary over a continuum of locations
-until the global optimum is found.
+distribution from among the 400 candidates. 
 
-The direction of the electron track is determined by taking the
+The direction of the electron track is then determined by taking the
 centroid of all vectors pointing from the fitted vertex to the hits on
 the detector. Since the Cherenkov light is highly directional, and
 since the timing cut enhances the purity of the Cherenkov light in the
@@ -523,36 +498,29 @@ direction.
 For the purpose of testing the reconstruction algorithm described
 above we use 1000 simulated electrons with an energy of 5~MeV. The
 electrons are simulated at the center of the detector, $\vec{r}$ =
-(0,0,0), along the x-axis, $\frac{\vec{p}}{|\vec{p}|}$ = (1,0,0).
-
-Figure~\ref{fig:reco} shows the vertex reconstruction. The vertex is
+(0,0,0), along the x-axis, $\frac{\vec{p}}{|\vec{p}|}$ = (1,0,0). FIG.~\ref{fig:reco} shows the vertex reconstruction. The vertex is
 reasonably well reconstructed around the center of the detector, $\vec{r}$
-= (0,0,0).\\\ 
-XXXXX(ACTUALLY IT'S NOT- IT'S BADLY PULLED, NO?)XXX\\\
-The RMS of the distributions for all three reconstructed
+= (0,0,0), except along the x-axis. The RMS of the distributions for all three reconstructed
 coordinates are smaller than 3.5~cm. The shift along the x-axis is
-partially attributed to the fact that electron is moving towards that direction
+partially attributed to the untuned effective speed of light and partially to the fact that electron is moving towards that direction
 and has a finite track length while the reconstruction algorithm
-treats all photons as they were emitted from the same point.\\
-XXX SO WHAT'S THE REST?\\
+treats all photons as they were emitted from the same point.
 The reconstruction of the direction also is shown in
-Fig.~\ref{fig:reco}. For the majority of the events we are able to
-reconstruct the direction of the electron direction.
+Fig.~\ref{fig:reco}. It shows that the majority of the events are well reconstructed in the correct direction. This is a very promising result given the simplicity of the algorithms used.
 
 \section{Conclusions}
 The ability to reconstruct direction in kiloton-scale scintillation
 detectors would be a major technological advance for neutrino
 experiments, especially those also
 searching for $0\nu\beta\beta$. More generally, this technique could
-be applied wherever scintillation-based detectors are used. A \GEANT
-simulation of a simple spherical detector corresponding to a kiloton
+be applied wherever scintillation-based detectors are used. A \GEANT~simulation of a simple spherical detector corresponding to a kiloton
 of scintillator shows that timing on the order of 0.1~ns is required
-to separate the directional Cerenkov light from the more abundant
+to separate the directional Cherenkov light from the more abundant
 scintillation light. This separation can be improved using
 photodetectors with more red sensitivity and liquid scintillators with
 a more narrow emission spectrum shifted to shorter
 wavelengths. Furthermore, simple reconstruction algorithms adapted
-from those for water Cerenkov detectors are able to reliably
+from those for water Cherenkov detectors are able to reliably
 reconstruct the position and direction of 5~MeV electrons. More
 detailed simulation and advanced reconstruction algorithms will need
 to be developed to move to lower energies and more complicated event
@@ -561,19 +529,18 @@ appears very promising.
 
 
 \section{Acknowledgments}
-We thank Andrew Blake at University of Cambridge for his work
-authoring the WCSimAnalysis code used to perform the reconstructions
-shown in this paper. Special thanks are due to the neutrino
+The authors thank Andrew Blake at University of Cambridge for his work
+authoring the WCSimAnalysis code. The authors thank the neutrino
 reconstruction group at Iowa State, particularly Mayly Sanchez, Ioana
 Anghel, and Tian Xin, for their continued work in developing the
 WCSimAnalaysis algorithms and for their insights and expertise
 regarding issues related to Cherenkov reconstruction with
-fast-timing. Thanks also to Micheal Smy for his development of the
-quadruplet-based, vertex-finding method. L. Winslow would like to
-thank J.M. Conrad for useful discussion on the topic, and K. Arisaka
+fast-timing. The authors also thank Micheal Smy for his development of the
+quadruplet-based vertex-finding method. L. Winslow would like to
+thank J.M. Conrad for many useful discussion on the topic, and K. Arisaka
 for discussions on the possible reach of traditional PMTs and the
 characteristics of HPDs. C. Aberle and L. Winslow are supported by
-funds from University of California Los Angeles. The work at UC is
+funds from University of California Los Angeles. The work at the University of Chicago is
 partially supported by DOE DE-SC0008172, NSF PHY-1066014, and the
 Grainger Foundation.
 
