@@ -1,36 +1,36 @@
 \providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{10}
 
 \bibitem{kam2013}
-{\bf KamLAND} Collaboration, A.~Gando et~al., {\it {Reactor On-Off Antineutrino
+  KamLAND collaboration, A.~Gando et~al., {\it {Reactor On-Off Antineutrino
   Measurement with KamLAND}},  \href{http://xxx.lanl.gov/abs/1303.4667}{{\tt
   arXiv:1303.4667}}.
 
 \bibitem{borexino}
-{\bf Borexino} Collaboration, G.~Bellini et~al., {\it {Precision measurement of
+  Borexino collaboration, G.~Bellini et~al., {\it {Precision measurement of
   the 7Be solar neutrino interaction rate in Borexino}},  {\em Phys. Rev.
   Lett.} {\bf 107} (2011) 141302,
   [\href{http://xxx.lanl.gov/abs/1104.1816}{{\tt arXiv:1104.1816}}].
 
 \bibitem{dbtwo}
-{\bf Daya Bay} Collaboration, F.~An et~al., {\it {Improved Measurement of
+  Daya Bay collaboration, F.~An et~al., {\it {Improved Measurement of
   Electron Antineutrino Disappearance at Daya Bay}},  {\em Chin. Phys.} {\bf
   C37} (2013) 011001, [\href{http://xxx.lanl.gov/abs/1210.6327}{{\tt
   arXiv:1210.6327}}].
 
 \bibitem{dctwo}
-{\bf Double Chooz} Collaboration, Y.~Abe et~al., {\it {Reactor electron
+  Double Chooz collaboration, Y.~Abe et~al., {\it {Reactor electron
   antineutrino disappearance in the Double Chooz experiment}},  {\em Phys.
   Rev.} {\bf D86} (2012) 052008, [\href{http://xxx.lanl.gov/abs/1207.6632}{{\tt
   arXiv:1207.6632}}].
 
 \bibitem{dchydrogen}
-{\bf Double Chooz} Collaboration, Y.~Abe et~al., {\it {First Measurement of
+  Double Chooz collaboration, Y.~Abe et~al., {\it {First Measurement of
   $\theta_{13}$ from Delayed Neutron Capture on Hydrogen in the Double Chooz
   Experiment}},  {\em Phys. Lett.} {\bf B723} (2013) 66,
   [\href{http://xxx.lanl.gov/abs/1301.2948}{{\tt arXiv:1301.2948}}].
 
 \bibitem{reno}
-{\bf RENO} Collaboration, J.~K. Ahn et~al., {\it {Observation of Reactor
+  RENO collaboration, J.~K. Ahn et~al., {\it {Observation of Reactor
   Electron Antineutrinos Disappearance in the RENO Experiment}},  {\em Phys.
   Rev. Lett.} {\bf 108} (2012) 191802.
 
@@ -50,7 +50,7 @@ J.~Conrad, M.~Shaevitz, I.~Shimizu, J.~Spitz, M.~Toups, and L.~Winslow, {\it
   arXiv:1307.5081}}. In preparation, for submission to Phys. Rev. D.
 
 \bibitem{isodar}
-{\bf IsoDAR} Collaboration, A.~Bungau et~al., {\it {Proposal for an Electron
+  IsoDAR collaboration, A.~Bungau et~al., {\it {Proposal for an Electron
   Antineutrino Disappearance Search Using High-Rate $^{8}$Li Production and
   Decay}},  {\em Phys. Rev. Lett.} {\bf 109} (2012) 141802,
   [\href{http://xxx.lanl.gov/abs/1205.4419}{{\tt arXiv:1205.4419}}].
@@ -71,7 +71,7 @@ N.~Bowden et~al., {\it {Experimental results from an antineutrino detector for
   {\bf A572} (2007) 985 -- 998.
 
 \bibitem{KZ0nu}
-{\bf KamLAND-Zen} Collaboration, A.~Gando et~al., {\it {Limit on Neutrinoless
+  KamLAND-Zen collaboration, A.~Gando et~al., {\it {Limit on Neutrinoless
   $\beta\beta$ Decay of Xe-136 from the First Phase of KamLAND-Zen and
   Comparison with the Positive Claim in Ge-76}},  {\em Phys. Rev. Lett.} {\bf
   110} (2013) 062502, [\href{http://xxx.lanl.gov/abs/1211.3863}{{\tt
@@ -83,7 +83,7 @@ J.~G. Learned, {\it {High Energy Neutrino Physics with Liquid Scintillation
   arXiv:0902.4009}}.
 
 \bibitem{chooz}
-{\bf CHOOZ} Collaboration, M.~Apollonio et~al., {\it {Search for neutrino
+  CHOOZ collaboration, M.~Apollonio et~al., {\it {Search for neutrino
   oscillations on a long baseline at the CHOOZ nuclear power station}},  {\em
   Eur.Phys.J.} {\bf C27} (2003) 331--374,
   [\href{http://xxx.lanl.gov/abs/hep-ex/0301017}{{\tt hep-ex/0301017}}].
@@ -108,7 +108,7 @@ A.~M. Steinberg, P.~G. Kwiat, and R.~Y. Chiao, {\it Dispersion cancellation in
   Phys. Rev. Lett.} {\bf 68} (1992) 2421--2424.
 
 \bibitem{pdg_review_2012}
-{\bf Particle Data Group} Collaboration, J.~Beringer et~al., {\it {Review of
+  Particle Data Group, J.~Beringer et~al., {\it {Review of
   Particle Physics (RPP)}},  {\em Phys. Rev.} {\bf D86} (2012) 010001.
 
 \bibitem{tamm1939}
@@ -134,15 +134,15 @@ I.~Barabanov et~al., {\it {A Nd-loaded liquid organic scintillator for the
   {\bf 55} (2012) 545--550.
 
 \bibitem{zr1}
-Y.~Fukuda, S.~Moriyama, and I.~Ogawa, ``{Development of liquid scintillator
+Y.~Fukuda, S.~Moriyama, and I.~Ogawa, {\it Development of liquid scintillator
   containing a zirconium complex for neutrinoless double beta decay
-  experiment}.'' article in press, Nucl. Instrum. Meth. A, 2013.
+  experiment}, article in press, Nucl. Instrum. Meth. A, 2013.
 
 \bibitem{mo1}
-V.~Gehman, P.~Doe, R.~Robertson, D.~Will, H.~Ejiri, et~al., {\it {Solubility,
-  Light Output and Energy Resolution Studies of Molybdenum-Loaded Liquid
-  Scintillators}},  {\em Nucl. Instrum. Meth.} {\bf A622} (2010) 602--607,
-  [\href{http://xxx.lanl.gov/abs/0911.2198}{{\tt arXiv:0911.2198}}].
+V.~Gehman, P.~Doe, R.~Robertson, D.~Will, H.~Ejiri, and R.~Hazama, {\it
+  {Solubility, Light Output and Energy Resolution Studies of Molybdenum-Loaded
+  Liquid Scintillators}},  {\em Nucl. Instrum. Meth.} {\bf A622} (2010)
+  602--607, [\href{http://xxx.lanl.gov/abs/0911.2198}{{\tt arXiv:0911.2198}}].
 
 \bibitem{qdot}
 L.~Winslow and R.~Simpson, {\it Characterizing quantum-dot-doped liquid
@@ -161,18 +161,18 @@ S.~D. Biller, {\it {Probing Majorana neutrinos in the regime of the normal mass
   [\href{http://xxx.lanl.gov/abs/1306.5654}{{\tt arXiv:1306.5654}}].
 
 \bibitem{sn1}
-{\bf KIMS} Collaboration, M.~Hwang et~al., {\it {Development of tin-loaded
+  KIMS collaboration, M.~Hwang et~al., {\it {Development of tin-loaded
   liquid scintillator for the double beta decay experiment}},  {\em Nucl.
   Instrum. Meth.} {\bf A570} (2007) 454--458.
 
 \bibitem{qdot2}
-C.~Aberle, J.~Li, S.~Weiss, and L.~Winslow, {\it {Optical Properties of
-  Quantum-Dot-Doped Liquid Scintillators}},
-  \href{http://xxx.lanl.gov/abs/1307.4742}{{\tt arXiv:1307.4742}}. {accepted by
-  JINST}.
+C.~Aberle, J.~Li, S.~Weiss, and L.~Winslow, {\it {Optical properties of
+  quantum-dot-doped liquid scintillators}},  {\em Journal of Instrumentation}
+  {\bf 8} (2013) P10015, [\href{http://xxx.lanl.gov/abs/1307.4742}{{\tt
+  arXiv:1307.4742}}].
 
 \bibitem{geant4one}
-{\bf GEANT4} Collaboration, S.~Agostinelli et~al., {\it {GEANT4: A Simulation
+  GEANT4 collaboration, S.~Agostinelli et~al., {\it {GEANT4: A Simulation
   toolkit}},  {\em Nucl. Instrum. Meth.} {\bf A506} (2003) 250--303.
 
 \bibitem{geant4two}
@@ -180,7 +180,7 @@ J.~Allison et~al., {\it Geant4 developments and applications},  {\em Nuclear
   Science, IEEE Transactions on} {\bf 53} (2006) 270--278.
 
 \bibitem{kamland2003}
-{\bf KamLAND} Collaboration, K.~Eguchi et~al., {\it {First results from
+  KamLAND collaboration, K.~Eguchi et~al., {\it {First results from
   KamLAND: Evidence for reactor anti-neutrino disappearance}},  {\em Phys. Rev.
   Lett.} {\bf 90} (2003) 021802,
   [\href{http://xxx.lanl.gov/abs/hep-ex/0212021}{{\tt hep-ex/0212021}}].
@@ -216,7 +216,7 @@ J.~Anderson et~al., {\it {\it The Development of Large-Area Fast
 \newblock {http://psec.uchicago.edu/library/doclib/documents/60/}.
 
 \bibitem{LAPPDTDR}
-{\bf {LAPPD}} Collaboration, {\it {\it Technical Design Report for the frugal
+  {LAPPD} collaboration, {\it {\it Technical Design Report for the frugal
   MCP}},  2010.
 \newblock {http://psec.uchicago.edu/library/doe\_reports/TDR.pdf}.
 
@@ -232,8 +232,8 @@ B.~Adams et~al., {\it Invited article: A test-facility for large-area
   {\em Review of Scientific Instruments} {\bf 84} (2013) 061301.
 
 \bibitem{PSEC4_paper}
-E.~Oberla, J.~Genat, H.~Grabas, H.~Frisch, K.~Nishimura, and G.~Varner, ``{ A
-  15 GSa/s, 1.5 GHz Bandwidth Waveform Digitizing ASIC}.'' submitted to Nucl.
+E.~Oberla, J.~Genat, H.~Grabas, H.~Frisch, K.~Nishimura, and G.~Varner, {\it A
+  15 GSa/s, 1.5 GHz Bandwidth Waveform Digitizing ASIC}, submitted to Nucl.
   Instrum. Meth. A, 2013.
 
 \bibitem{anode_paper}
@@ -267,7 +267,7 @@ M.~Ishitsuka, {\em L/E Analysis of the Atmospheric Neutrino Data From
 \newblock PhD thesis, University of Tokyo, 2004.
 
 \bibitem{Smy}
-{M. Smy for the Super-Kamiokande Collaboration}, {\it {Low Energy Event
+{M. Smy for the Super-Kamiokande collaboration}, {\it {Low Energy Event
   Reconstruction and Selection in Super-Kamiokande-III}},  in {\em {Proceedings
   of the 30th International Cosmic Ray Conference}} ({R.~Caballero,
   J.C.~D'Olivo, G.~Medina-Tanco, L.~Nellen, F.A.~S\'{a}nchez,
