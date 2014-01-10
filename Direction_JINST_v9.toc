@@ -1,0 +1,9 @@
+\contentsline {section}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {2}Liquid scintillator detectors}{2}
+\contentsline {section}{\numberline {3}Geant4 simulation}{5}
+\contentsline {section}{\numberline {4}Detector timing}{8}
+\contentsline {section}{\numberline {5}Detector wavelength response}{9}
+\contentsline {section}{\numberline {6}Scintillator emission spectrum}{9}
+\contentsline {section}{\numberline {7}Reconstruction}{10}
+\contentsline {section}{\numberline {8}Energy dependence}{12}
+\contentsline {section}{\numberline {9}Conclusions}{13}

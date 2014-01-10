@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Direction_JINST_v6.aux
+The style file: JHEP.bst
+Database file #1: DirectionBibliography_v1.bib
+You've used 63 entries,
+            2195 wiz_defined-function locations,
+            898 strings with 13150 characters,
+and the built_in function-call counts, 17753 in all, are:
+= -- 1873
+> -- 530
+< -- 0
++ -- 203
+- -- 140
+* -- 1182
+:= -- 2400
+add.period$ -- 76
+call.type$ -- 63
+change.case$ -- 55
+chr.to.int$ -- 0
+cite$ -- 63
+duplicate$ -- 1014
+empty$ -- 1665
+format.name$ -- 140
+if$ -- 4614
+int.to.chr$ -- 0
+int.to.str$ -- 63
+missing$ -- 187
+newline$ -- 203
+num.names$ -- 61
+pop$ -- 264
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 757
+stack$ -- 0
+substring$ -- 913
+swap$ -- 465
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 121
+width$ -- 65
+write$ -- 635
