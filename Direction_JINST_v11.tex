@@ -79,7 +79,7 @@ KamLAND-Zen\cite{KZ0nu}.
 The advantage of liquid scintillators for measurements in the
 $\sim$1~MeV range is their scalability from 1~ton to 1~kiloton while
 providing energy resolutions of $\sigma(E)=\sim$5 \% $/\sqrt{E(MeV)}$\cite{kam2013,borexino}. This is roughly a factor of
-two better than water Cherenkov detectors, the other developed
+two better than for water Cherenkov detectors, the other developed
 technology for neutrino detectors that can be economically scaled to these large
 masses. However, this energy resolution is much poorer than other technologies being used for $0\nu\beta\beta$ searches: Ge detectors\cite{gerda2013}, Te bolometers\cite{Alessandria:2011rc}, tracking detectors\cite{SuperNEMO}, liquid Xe time projection chambers (TPCs)\cite{EXO2012} and high pressure gaseous Xe TPCs\cite{NEXTsipm}.  
 
@@ -89,14 +89,16 @@ scintillation processes; however some fraction retains its
 directional information. If this directional Cherenkov light can be
 isolated from the copious isotropic scintillation light, it may be
 possible to reconstruct the direction of the primary particle. The addition of directionality is a powerful tool
-for background rejection, especially for $0\nu\beta\beta$ searches. In the high pressure TPCs, reduction factors on the order of $\sim10^4$ have been achieved\cite{Gotthard}. It is also possible to look for new physics in the angular correlation of the emerging electrons\cite{newphysics0nuBB}, as has been proposed for the tracking-based detectors\cite{SuperNEMO,NEXTsipm}. The addition of a directional signal would make large-scale liquid scintillator detectors more competitive for the next generation of $0\nu\beta\beta$ searches and merits investigation.
+for background rejection, especially for $0\nu\beta\beta$ searches. In high pressure TPCs, reduction factors on the order of $\sim10^4$ have been achieved\cite{Gotthard}. It is also possible to look for new physics in the angular correlation of the emerging electrons\cite{newphysics0nuBB}, as has been proposed for the tracking-based detectors\cite{SuperNEMO,NEXTsipm}. The addition of a directional signal would make large-scale liquid scintillator detectors more competitive for the next generation of $0\nu\beta\beta$ searches. 
+%and merits investigation.
 
 This is the first in a series of papers exploring directionality in large-scale liquid scintillator detectors. In this paper, we develop a technique for
 separating the Cherenkov and scintillation light using the photon arrival
 times and evaluate several detector advances in timing, photodetector 
 spectral response, and scintillator emission spectra that would allow
 the realization of direction reconstruction in kilo-ton scale
-scintillating neutrino detectors. This is a different from the direction reconstruction described for high-energy neutrino interactions\cite{john} or that for neutrons from inverse beta decay\cite{chooz,dcDirection}.  We then use these results as input into a traditional direction reconstruction developed for water Cherenkov detectors. Since the reconstruction of the direction of $\sim$1~MeV particles has not been achieved before, we start these studies with the most simple case of a single particle at the center of the detector. We also start with an easier test case of a 5~MeV electron like that from a $^{8}$B solar neutrino interaction. With the higher photon statistics at this energy, we verify the technique and the different detector parameters that affect it. We then study the technique for two lower energies, 1.4 and 2.1 MeV, that are more relevant to $0\nu\beta\beta$.  
+scintillating neutrino detectors. This is different from the direction reconstruction described for high-energy neutrino interactions\cite{john} or that for neutrons from inverse beta decay\cite{chooz,dcDirection}.  We then use these results as input into a traditional direction reconstruction developed for water Cherenkov detectors. Since the reconstruction of the direction of $\sim$1~MeV particles has not been achieved before, we start these studies with the %most
+simple case of a single particle at the center of the detector. We also start with an easier test case of a 5~MeV electron like that from a $^{8}$B solar neutrino interaction. With the higher photon statistics at this energy, we verify the technique and the different detector parameters that affect it. We then study the technique for two lower energies, 1.4 and 2.1 MeV, that are more relevant to $0\nu\beta\beta$.  
 
 \section{Liquid scintillator detectors}
 Liquid scintillators are `cocktails' of aromatic hydrocarbons. When
@@ -149,7 +151,9 @@ The Cherenkov light produced at wavelengths shorter than the
 absorption cutoff of the scintillator will be absorbed and re-emitted
 as isotropic light, but wavelengths longer than this cutoff will
 propagate across the detector, retaining their directional
-information. The absorption cutoff for the example scintillator above is 370~nm. The index of refraction at  n(370nm)=1.466 and can be translated into an effective Cherenkov threshold for electrons at 0.188~MeV. For a 5~MeV electron, this yields 685 Cherenkov photons per event when integrating from the cutoff wavelength at 370~nm to 550~nm,  the wavelength above which a small number of photons is detected due to a standard bialkali photocathode's quantum efficiency. Lowering the energy to 1~MeV yields 82 Cherenkov photons between 370-550~nm.
+information. The absorption cutoff for the example scintillator above is 370~nm. The index of refraction at $\lambda$=370~nm is n=1.466, which translates
+%n(370nm)=1.466 and can be translated 
+into an effective Cherenkov threshold for electrons at 0.188~MeV. For a 5~MeV electron, this yields 685 Cherenkov photons per event when integrating from the cutoff wavelength at 370~nm to 550~nm,  the wavelength above which a small number of photons is detected due to a standard bialkali photocathode's quantum efficiency. Lowering the energy to 1~MeV yields 82 Cherenkov photons between 370-550~nm.
 
 %For the example scintillator above, n(400nm)=1.459\cite{OlegThesis}. The absorption cutoff is between 370~nm and 360~nm where the attenuation length rapidly drops from 6.5~m to 0.65~m. For a 5~MeV electron, this yields 744 Cherenkov photons per event; dropping down to a 1~MeV electron yields 89 Cherenkov photons per event when integrating from the cutoff wavelength at 360~nm to 550~nm, the point above which a small number of photons is detected due to a standard photocathode's quantum efficiency. For reference at this cutoff wavelength, the index of refraction n(370nm)=1.466. This can be translated into an effective Cherenkov threshold for electrons at 0.188~MeV.
 
@@ -168,11 +172,11 @@ possible to separate the directional Cherenkov light and the isotropic
 scintillation light, and then to reconstruct the direction of the
 initial particle.
 
-In neutrino-electron scattering events, a single electron emerges with a distribution of energies with a maximum energy related to the incoming neutrino's energy. In comparison, $0\nu\beta\beta$ events are more complicated with two electron emerge with a combined energy equal
+In neutrino-electron scattering events, a single electron emerges with a distribution of energies with a maximum energy related to the incoming neutrino's energy. In comparison, $0\nu\beta\beta$ events are more complicated, with two electrons emerging with a combined energy equal
 to the Q-value of the particular isotope. The individual
 electrons follow distributions of energies and angular correlations which depend on the underlying $0\nu\beta\beta$ decay mechanism\cite{SuperNEMO,newphysics0nuBB,bandv}. Figure 1 shows a simulated $^{116}$Cd $0\nu\beta\beta$ event in a model with light Majorana neutrino exchange, for which a probable case is the emission of two electrons with comparable energies at a large angle relative to each other. 
 
-High Q-value candidates are preferred for $0\nu\beta\beta$  for two reasons. First, the measured half-life is inversely proportional to the phase-space factor, therefore the measured rate is expected to be higher from isotopes with higher Q-values. Second, the main background for these experiments come from the daughters of the $^{238}$U and $^{232}$Th decay chains. The Compton shoulder from gamma-rays is particularly problematic. The 2.6~MeV gamma-ray from $^{208}$Tl decay is the highest energy gamma from these decay chains and therefore isotopes above 2.6~MeV are preferred.  Experiments using isotopes with Q-values below this energy must compensate with improved background rejection techniques.
+High Q-value candidates are preferred for $0\nu\beta\beta$  for two reasons. First, as the measured half-life is inversely proportional to the phase-space factor, the measured rate is expected to be higher from isotopes with higher Q-values. Second, the main background for these experiments come from the daughters of the $^{238}$U and $^{232}$Th decay chains. The Compton shoulder from gamma-rays is particularly problematic. The 2.6~MeV gamma-ray from $^{208}$Tl decay is the highest energy gamma from these decay chains and so isotopes above 2.6~MeV are preferred.  Experiments using isotopes with Q-values below this energy must compensate with improved background rejection techniques.
 
 Most of the high Q-value candidates\cite{tabledbb}
 have been considered as a dopant for a liquid scintillator:
@@ -183,7 +187,7 @@ $^{136}$Xe (Q=2.479~MeV)\cite{KZ0nu} and $^{124}$Sn (Q=2.29~MeV)\cite{sn1}.
 Xenon gas readily dissolves into liquid scintillator. For the other isotopes,
 a suitable organometallic compound needs to be found that produces a stable
 scintillator with a long attenuation length in the wavelength region of
-interest. Recently nanocrystals formed by candidate isotopes have been explored as an alternative to doping by single atoms,\cite{qdot,qdot2}.
+interest. Recently nanocrystals formed by candidate isotopes have been explored as an alternative to doping by single atoms\cite{qdot,qdot2}.
 
 \begin{figure}
         \begin{center}
@@ -220,7 +224,7 @@ refractive index\cite{OlegThesis}, the scintillation emission
 spectrum\cite{tajimaMaster}, emission rise time ($\tau_r$ = 1.0~ns)
 and emission decay time constants ($\tau_{d1}$ = 6.9~ns and
 $\tau_{d2}$ = 8.8~ns with relative weights of 0.87 and 
-0.13)\cite{tajimaThesis}, scintillator light yield (9030 photons/MeV)
+0.13)\cite{tajimaThesis}, scintillator light yield (9030 photons/MeV),
 and the Birks constant ($kB$ $\approx$ 0.1~mm/MeV)\cite{ChrisThesis}.  This is a standard scintillator. The attenuation length at 400~nm, the position of the peak standard bialkali photocathode efficiency, is 25~m. The attenuation length drops precipitously between 370~nm and 360~nm from 6.5~m to 0.65~m. We use this drop to define the cutoff wavelength at 370~nm. Variations from the baseline KamLAND case are discussed below. 
 
 Re-emission of absorbed photons in the scintillator
@@ -231,7 +235,7 @@ bulk volume and optical scattering, specifically Rayleigh scattering, have not y
         \includegraphics[scale=0.4]{graphs2/PEtime_Cerenkov_scattered_vs_unscattered.pdf}
         \caption[]{Cherenkov photoelectron (PE) arrival times after application
         of the transit-time spread (TTS) for the simulation
-        of 1000 electrons (5~MeV). The default simulation is shown with optical scattering turned on: all photons (black), un-scattered photons (red dotted), and scattered (blue dashed). Scattering causes a very small tail at longer times as expected. \label{scattplot}}
+        of 1000 electrons (5~MeV). The default simulation is shown with optical scattering turned on: all photons (black solid), un-scattered photons (red dotted), and scattered (blue dashed). Scattering causes a very small tail at longer times as expected. \label{scattplot}}
         \end{center}
 \end{figure}
 
@@ -417,7 +421,7 @@ separation is worse (as expected) because the scintillation light
 wavelengths are longer than in the KamLAND emission spectrum.
 
 However, advances in the production of commercial quantum dot samples
-could yield quantum dots which have similar, single peak emission
+could yield quantum dots that have similar, single peak emission
 shapes at shorter wavelengths. This case has been simulated using the
 same spectral shape of the measured core-shell quantum dot emission
 but shifted to shorter wavelengths such that the emission peak is
@@ -450,7 +454,7 @@ average photon travel times.
         $(p_x/|\vec{p}|, p_y/|\vec{p}|,
         p_z/|\vec{p}|)$, for the simulation of 1000 electrons. In the simulation the electrons are produced along the
         x-axis, $\vec{p}/|\vec{p}|$ = (1,0,0), and originate
-        from the center of the 6.5m-radius detector, $\vec{r}$ =
+        at the center of the 6.5m-radius detector, $\vec{r}$ =
         (0,0,0). Only photons with arrival time of $t<$ 34.0~ns are used
         in the reconstruction. The quantum efficiency of the bialkali
         photocathode is taken into account. (Right) The reconstructed
@@ -475,7 +479,7 @@ techniques for water Cherenkov detectors\cite{Sanchez2012525} based on
 advanced photosensors with sub-cm imaging capabilities and timing
 resolutions below 100 picoseconds.
 
-To start, we are neglecting the effects of position dependence. In future work the arrival times can be corrected by the time of flight from the reconstructed vertex and the position and direction fitted simultaneously. For isotropic light, the vertex reconstruction uncertainty leads to an additional smearing of the arrival time distribution of 0.15~ns for every 3~cm of position reconstruction uncertainty. For directional light, the vertex reconstruction uncertainty leads to an effective shift of the arrival time distribution. This would change the ideal time cut by 0.15~ns  for every 3~cm of position reconstruction uncertainty. We have studied other time cuts from 33~ns to 34.5~ns and the reconstruction remained reasonable. 
+To start, we are neglecting the effects of position dependence. In future work the arrival times can be corrected by the time of flight from the reconstructed vertex and the position and direction fitted simultaneously. For isotropic light, the vertex reconstruction uncertainty leads to an additional smearing of the arrival time distribution of 0.15~ns for every 3~cm of position reconstruction uncertainty. For directional light, the vertex reconstruction uncertainty leads to an effective shift of the arrival time distribution. This would change the ideal time cut by 0.15~ns  for every 3~cm of position reconstruction uncertainty. We have studied other time cuts from 33~ns to 34.5~ns and the reconstruction remains reasonable. 
 
 The results presented in this paper rely on a simple vertex
 reconstruction algorithm, commonly known as a ``point
@@ -556,7 +560,7 @@ of the scintillation and Cherenkov spectra are similar for the lower energies (n
 shown here). In figure \ref{Edep_NPE}, the energy-dependent mean number of
 PEs per event after the 34.0~ns time cut is shown for Cherenkov-induced and
 scintillation-induced PEs, as well as their ratio $R_{C/S}$. The mean number
-of PEs from Cherenkov (scintillation) light for electron energies 1.4(2.1)~MeV is 21.8 (52.1), 38.4 (76.8)
+of PEs from Cherenkov (scintillation) light for electron energies of 1.4, 2.1, and 5~MeV is 21.8 (52.1), 38.4 (76.8)
 and 108 (171) for 1.4~MeV, 2.1~MeV and 5~MeV, respectively. This gives the
 ratios $R_{C/S}$ = 0.42, 0.50 and 0.63: The decrease in Cherenkov-induced
 PEs is stronger than the decrease in scintillation-induced PEs as the energy
@@ -580,15 +584,16 @@ and the reconstructed direction for different energies of the initial electron i
 \section{Conclusions}
 
 We have developed a technique to separate scintillation and Cherenkov light to reconstruct direction of electrons with energies 5~MeV, 2.1~MeV and 1.4~MeV in a liquid scintillator detector. These energies have been chosen to represent typical neutrino-electron elastic scattering energies and
-$0\nu\beta\beta$ energies. The Cherenkov threshold for an electron in a typical liquid scintillator is $\sim$0.188~MeV.
+$0\nu\beta\beta$ energies. The Cherenkov threshold for an electron in a typical liquid scintillator is $\sim$0.2~MeV.
 
-While scintillation light is isotropic, Cherenkov light with wavelengths above the absorption cutoff $\sim$370~nm carries the information about the direction of the electrons. All light shorter than this gets absorbed and re-emitted isotropically as a part of the scintillation process. On average scintillation light is delayed with respect to the direct Cherenkov light due to chromatic dispersion and the finite time of the scintillation processes, therefore early light contains directional information.
+While scintillation light is isotropic, Cherenkov light with wavelengths above the absorption cutoff $\sim$370~nm carries the information about the direction of the electrons. All light shorter than this gets absorbed and re-emitted isotropically as a part of the scintillation process. On average scintillation light is delayed with respect to the direct Cherenkov light due to chromatic dispersion and the finite time of the scintillation processes; the early light thus contains directional information.
 
-Using a Geant4~simulation of a spherical detector with radius of 6.5~m and photodetectors with TTS of 0.1~ns, we have showed that for electrons originated at the center a time cut on the early light was effective at isolating the directional light, improving the ratio of Cherenkov light to scintillation light from 0.02 to 0.63. This ratio is degraded by a factor of 2.5 if current photodetectors with $\sim$1~ns resolution were used. This can be improved by factors of 1.6 or 1.4 if more red sensitive photodetectors or scintillators with narrower emission spectra are used.
+Using a Geant4~simulation of a spherical detector with radius of 6.5~m and photodetectors with TTS of 0.1~ns, we have shown that for electrons originated at the center a time cut on the early light is effective at isolating the directional light, improving the ratio of Cherenkov light to scintillation light from 0.02 to 0.63. This ratio is degraded by a factor of 2.5 if current photodetectors with $\sim$1~ns resolution were used. This can be improved by factors of 1.6 or 1.4 if more red-sensitive photodetectors or scintillators with narrower emission spectra are used.
 
-Reconstruction algorithms developed for water Cherenkov detectors have been applied to this early light. The algorithms are able to converge on reasonable reconstructed vertices and directions for all simulated energies: 5~MeV, 2.1~MeV, 1.4~MeV. As expected, the reduction in photon statistics with lower energies leads to a broadening of the reconstructed vertex by $\sim$1~cm. Similarly, the mean reconstructed direction drops from 0.88 to 0.74 as the $\cos(\theta)$ distribution broadens.
+Reconstruction algorithms developed for water Cherenkov detectors have been applied to this early light. The algorithms are able to converge on reasonable reconstructed vertices and directions for all simulated energies: 5~MeV, 2.1~MeV, 1.4~MeV. As expected, the reduction in photon statistics with lower energies leads to a broadening of the reconstructed vertex by $\sim$1~cm. Similarly, the mean $\cos(\theta)$ between the reconstructed and initial directions drops from 0.88 to 0.74.
+% reconstructed direction drops from 0.88 to 0.74 as the $\cos(\theta)$ distribution broadens.
 
-We have shown that this technique is promising, and we plan to continue work on the topic. The ability to reconstruct direction in kiloton-scale scintillation detectors would expand capabilities of neutrino experiments, especially those also searching for neutrino-less double-beta decay. More generally, this technique could be applied wherever scintillation-based detectors are used.
+This technique is promising, and we plan to continue work on the topic. The ability to reconstruct direction in kiloton-scale scintillation detectors would expand capabilities of neutrino experiments, especially those also searching for neutrino-less double-beta decay. More generally, this technique could be applied wherever scintillation-based detectors are used.
 
 
 %This work should include a more detailed simulation including second order effects such as reemission and a more detailed photodetector model including electronics thresholds. More advanced reconstruction methods are also needed to simultaneously fit position and direction and to handle the more complicated event structure found in neutrino-less double-beta decay. 
