@@ -1,0 +1,736 @@
+\documentclass[11pt]{article}
+
+\usepackage[usenames,dvips]{pstcol}
+
+\usepackage{color}
+
+\usepackage{amssymb}
+
+\usepackage{amsmath}
+
+\usepackage{graphicx,color}
+
+%
+
+%\input{symbols.tex}
+
+%
+
+\newcounter{question}
+
+\newcommand{\noteq}{{\vskip0.1in\bf \large \color{red} [Q:{\color{black}\addtocounter{question}{1}\arabic{question}}]~}}
+
+\newcommand{\noteQ}{{\bf \LARGE \color{blue} [Q: {\color{black}\addtocounter{question}{1}\arabic{question}}]~}}
+
+\newcommand{\notea}{{\bf \large \color{red} [A]~}}
+
+\newcommand{\noteA}{{\bf \LARGE \color{blue} [A]~}}
+
+\newcommand{\noteqq}[1]{{\bf \large \color{red} [Q: {\color{black}#1}]~}}
+
+\newcommand{\noteaa}[1]{{\bf \large \color{red} [A: {\color{black}#1}]~}}
+
+%
+
+\textwidth 6.5in
+
+\textheight 9.4in
+
+\topmargin -0.8in
+
+\oddsidemargin 0.0in
+
+\evensidemargin 0.0in
+
+\parindent 0.0in
+
+\def\baselinestretch{1.0}
+
+\def \Russ {Translated from Russian. Fixed. Thanks.}
+
+\def \F    {Fixed.}
+
+\def \FT   {Fixed. Thanks.}
+
+\def \D    {Done.}
+
+\def \AP   {Basically Stylistic- Author's Prerogative.}
+
+
+
+\begin{document}
+
+
+
+\begin{flushright}
+
+\today
+
+\end{flushright}
+
+%----------------------------------------------------------------
+
+
+
+Dear JINST Editors,\\
+
+
+
+\parindent 1.0in
+
+
+
+We thank the referees for their very helpful and knowledgeable
+
+comments. We have substantially rewritten the manuscript in response 
+
+to the comments as detailed in the list below. 
+
+
+
+There are several areas, however, in which the referees requested
+
+substantially expanding the scope of the paper.  We envisioned this
+
+paper as a proof of  the principle that the use of the fast timing
+
+photodetectors presently being developed would enable the separation
+
+of Cherenkov and scintillation light, as the reconstruction of the
+
+direction of low energy ($\sim$1 MeV) electrons in a liquid
+
+scintillator detector has never been shown before.  In this paper, we
+
+want to: 1) show scintillation/Cherenkov separation is possible; 2)
+
+determine the parameters of a large scintillator detector that are
+
+important to this separation; and 3) demonstrate that reconstruction
+
+techniques based on Cherenkov light would work in idealized
+
+situations.
+
+
+
+We are now working on two follow-up papers that are substantially
+
+beyond the scope of the present paper, moving beyond
+
+proof-of-principle into the laborious and time-intensive area of
+
+reconstruction algorithms, areas for which the difficulty is known
+
+well by some of us from our experience on KamLand. The first is a
+
+detailed study of reconstruction in more realistic scenarios. The
+
+second is a proposal for a $0\nu\beta\beta$ experiment  where the detailed
+
+background reduction factors and sensitivity to new physics are
+
+presented, SuperNEMO has a similar paper, but for scintillator
+
+detectors nothing similar exists since a directional signal has not
+
+been considered for them in the past.  Finally, we will be having a
+
+turnover of young personnel so this paper provides an accessible summary
+
+of their work.
+
+
+
+
+
+\parindent 3.0in
+
+                
+
+    Sincerely,\\
+
+
+
+\parindent 4.0in
+
+
+
+		         Lindley Winslow, for the Authors
+
+
+
+\parindent 0.0in
+
+
+
+%\begin{verbatim}
+
+%\end{verbatim}
+
+
+
+\noteq [Referee 1 Intro] ``I like  very much the clean, transparent, simple
+
+and well-motivated methodology (with one exception..). The structure
+
+of the paper is nice''
+
+
+
+\notea{\bf Many thanks.}\\
+
+
+
+
+
+\noteq [Referee 1 Intro] ``However the presentation of the results is a
+
+different thing... I am particularly concerned with the fact...,
+
+instead of showing the resulting CosTheta distribution that would seem
+
+like the obvious result one wants to see. .... Why not to disclose
+
+this openly to allow the reader to evaluate the results in detail?''
+
+
+
+\notea{\bf  This is our fault- the desired plot was (is) there
+
+(now Figure 5), but was labeled as $p_x/|\vec{p}|$ rather than the obvious
+
+$\cos\theta$ that it is. We have made this clear on the figure and in the
+
+text. We have also added the distribution for the 2.1~MeV point. Thanks.}\\
+
+
+
+\noteq [Referee 1: Page 1] ``Please specify FWHM or sigma and give a
+
+reference for both cases.''
+
+\notea{\bf  \D  ~We have added references to KamLAND and Borexino.}\\
+
+
+
+
+\noteq [Referee 1: Page 1] ``...but please avoid misplacing the adjective good in
+
+this context. ...'' 
+
+\notea{\bf  \FT}\\
+
+
+
+\noteq [Referee 1: Page 2] ``..the authors should..check and refer to
+
+the work of NEXT and Super-Nemo collaborations:''
+
+
+
+\notea{\bf  \D We have added a discussion of previous work on directionality.}\\
+
+
+
+
+
+\noteq [Referee 1: Page 2] ``Define PPO here, not later''
+
+
+
+\notea{\bf \D}\\
+
+
+
+
+
+\noteq [Referee 1: Page 3] ``Please define all magnitudes in eq. 2.1 and 2.2''
+
+
+
+\notea{\bf \D}\\ 
+
+
+
+
+
+\noteq [Referee 1: Page 3]  ``Indicating the direction of the
+
+electrons should not harm''
+
+
+
+\notea{\bf  We were not sure what the referee was requesting. If this is a request for figure 1, we have tried adding the arrows and it becomes too busy. We think the caption description works well.}\\
+
+
+
+
+
+
+\noteq [Referee 1: Page 3] ``None of the best limits or claims in bb0
+
+uses an isotope that satisfies this condition..''
+
+
+
+\notea{\bf \FT We have rewritten this section to address this comment.}\\
+
+
+\noteq [Referee 1: Page 4] ``could you perhaps include the
+
+attenuation @400nm and n@400..?''
+
+
+
+\notea{\bf \D We have added the attenuation length at 400nm. We have also added the n at other wavelengths in other locations. Unfortunately we cannot cite one figure in the references as the index of refraction is taken from the KamLAND simulation which is based on several measurements that are in the cited references.}\\
+
+
+
+\noteq [Referee 1: Page 4] ``Could you please include also the cutoff
+
+wavelength previously referred to?''
+
+
+\notea{\bf This has been added.}\\
+
+
+\noteq [Referee 1: Page 4] `` Scattering have not been included..'' 
+
+
+
+\notea{\bf We have added a figure and accompanying text to show that
+
+  the scattering only adds a late tail. Thanks.}\\
+
+
+
+\noteq [Referee 1: Page 4] ``For which digitized values come from ??''
+
+
+
+\notea{\bf \F}\\
+
+
+
+\noteq [Referee 1: Page 4] ``5 MeV electrons.. It is very disturbing
+
+to benchmark the simulation with electrons having an energy doubling
+
+the Qbb of the most common isotopes..'' 
+
+
+
+\notea{\bf We have clarified in several places 
+
+that the 5 MeV case is for neutrino-electron scattering experiments. For $0\nu\beta\beta$ we
+
+have made it explicit that we consider 1.4 and 2.1 MeV}\\
+
+
+
+\noteq [Referee 1: Page 4] ``Please specify also the track length in
+
+the direction of emission''
+
+
+
+\notea{\bf \D}\\
+
+
+
+\noteq [Referee 1: Page 5] ``Before the solutes in liquid... Please rephrase'' 
+
+
+
+\notea{\bf \D}\\
+
+
+
+\noteq [Referee 1: Page 5] ``I hope that [43] is not the final version
+
+but a draft. 
+
+
+
+\notea{\bf It was a draft; we have changed the reference. Thanks!}\\
+
+
+
+
+
+\noteq [Referee 1: Page 6] ``So I would be very much convinced ..if
+
+the authors would report Fig. 3 during the electron history
+
+(equivalently, energy or distance, including several histograms for
+
+each case. It would be nice to see at which energy scale or length the
+
+electron isotropizes and the Cherenkov cone smears out.''
+
+
+
+\notea{\bf  In the updated figure 4 (angular PE hit distribution after time cut), we added the histograms for 1.4~MeV and 2.1~MeV. This shows that also for 2.1 and 1.4~MeV the PE hits are not isotropized, including the full history of the electron tracks. We have also added the path lengths and total distance and time from the vertex to the text. We also present in Fig.~\ref{truthscatt} of this report  more raw data for the referees which supports the statement that the scattering angle is small while the majority of the Cherenkov light is produced.}\\ 
+
+\begin{figure}
+        \begin{center}
+        \includegraphics[scale=0.50]{Figure1_1.pdf} 
+        \includegraphics[scale=0.50]{Figure1_2.pdf} 
+         \caption[]{"For electrons with and initial energy of 1.4~MeV, we show (Top) the angle between the initial electron direction and the direction at 0.7 MeV (=half of the initial electron energy) and (Bottom) the angle between the initial electron direction and the direction of the last Geant4 step before the electron stops. We note that due to scattering the final direction of the electron before it stops does not correspond to the initial direction; however the scattering angle is small while the majority of Cherenkov light is produced.}
+        \end{center}
+\end{figure}
+
+
+
+\noteq [Referee 1: Pages 7-8] ``This is interesting, but specially
+
+section 6 seems a bit off-topic to me. I am not against keeping it...''
+
+
+
+\notea{\bf We'd like to keep it. }\\
+
+
+
+
+
+\noteq [Referee 1: Page 9] ``Please add a histogram of the reconstructed
+
+angle for all energies...'' 
+
+
+
+\notea{\bf  \D}\\
+
+
+
+
+\noteq [Referee 1: Page 9] ``..the vertex reconstruction has to be
+
+obtained from all photons and the direction from the Cherenkov photons..''
+
+
+
+\notea{\bf We agree with the referee and plan to address this in future papers. To do a credible and useful job on the position dependence will require a fairly-detailed vertex reconstruction. This is beyond the scope of this present ‘proof-of-principle’ paper. We have tried to clarify this in the text }\\
+
+
+
+
+
+\noteq [Referee 1: Fig. 7] ``the authors should show the spread of the
+
+cos(theta) distribution for each of the energies. 
+
+
+
+\notea{\bf \D See Figure 5.}\\
+
+
+
+
+\noteq [Referee 1: Fig. 7 ``It would be nice to show/indicate..also the
+
+Cherenkov threshold for high wave-length (n about 1.4)
+
+
+
+\notea{\bf We have added this to the text.}\\
+
+
+
+\noteq [Referee 1: Conclusions] ``Should be rewritten after the
+
+previous objections are addressed.'' 
+
+
+
+\notea{\bf \D Thanks!}\\
+
+
+
+
+\noteq [Referee 1: Page 7-8] ``I see no convincing proof of it with
+
+the information here presented. Hope the answers help clarifying the issue.'' 
+
+
+
+\notea{\bf We have made the sentence more specific. Thanks.}\\
+
+
+
+%\newpage
+
+\noteq [Referee 2: General Comments] ``The paper introduces an
+
+original technical development which could increase the interest of
+
+large scale scintillation detectors for neutrino physics in general
+
+and neutrinoless double beta decay in particular''
+
+
+
+\notea{\bf  Thank you, this warms our hearts.}\\
+
+
+
+\noteq [Referee 2: General comments] `` ..however the discussion
+
+should deserve...a deeper analysis.''
+
+
+
+\notea{\bf Yes. We included more data from the lower energy studies,
+
+  have extracted much more detail from the simulation, and have
+
+  extensively rewritten the manuscript. It is still at the
+
+  `proof-of-principle level. Our next work will include a full sensitivity analysis including \a deeper understanding of the performance of the reconstruction algorithms with a more detailed simulation. This is a big job and we are working on it! }\\
+
+
+
+\noteq [Referee 2: General Comments] ``The physics case is included in
+
+the title and mentioned in the text but never discussed in some
+
+detail...A description of why the method is powerful for double beta
+
+decay, and..to what extent it can improve the experimental sensitivity
+
+would complete the discussion
+
+
+
+\notea{\bf  \D}\\
+
+
+\noteq [Referee 2: General Comments] ``The chosen example (5 MeV,
+
+head-to-head single electrons) is of little interest for double beta decay.'' 
+
+
+
+\notea{\bf We have added plots and numbers for 1.4 and 2.1 MeV, and
+
+  substantially rewritten the text to differentiate between the cases
+
+  of neutrino-electron scattering and double-beta decay.}\\
+
+
+
+
+
+\noteq [Referee 2: General Comments] ``The dependence on the decay
+
+position.. is not discussed.'' 
+
+
+
+\notea{\bf To do a credible and useful job on the position dependence
+
+  will require a fairly-detailed vertex reconstruction. This is beyond
+
+  the scope of this present `proof-of-principle' paper. We have tried
+
+  to clarify this in the text. }\\
+
+
+
+
+
+\noteq [Referee 2: General Comments] Threshold effects as well as the
+
+effect of statistical fluctuations for the low energy tails.. are not
+
+discussed. The same holds for position and direction reconstruction
+
+capabilities'' 
+
+
+
+\notea{\bf Statistical fluctuations are addressed by the studies at lower energies and we mention explicitly in the conclusions the widening of the distributions due to decreased statistics. Threshold effect are outside of the scope of this paper. In general in these detectors, the largest loss of photon statistics is a the photocathode. The electronics for PMT readout are very efficient. }\\
+
+
+
+
+
+\noteq [Referee 2: Abstract] ``While appropriate for neutrino physics,
+
+energy resolution is definitely worse with respect to other techniques..''
+
+
+
+\notea{\bf We have fixed the text. Thanks.}\\
+
+
+
+
+
+\noteq [Referee 2: Introduction] ``A reference ... would help to understand
+
+the connection with Majorana neutrinos.''
+
+
+
+\notea{\bf \D}\\
+
+
+
+
+
+\noteq [Referee 2: Page 1] Is this 1 sigma or FWHM? 
+
+
+
+\notea{\bf It's sigma- we have fixed the text.}\\
+
+
+
+
+
+\noteq [Referee 2: Page 2] ``better than water Cherenkov detectors'' 
+
+
+
+\notea{\bf \FT}\\
+
+
+\noteq [Referee 2: Page 2 ] ``strong suppressant of backgrounds''..this
+
+statement should deserve a deeper quantitative discussion ..''
+
+
+
+\notea{\bf We agree. However, a useful ``quantitative discussion''
+
+  will require a vertex reconstruction. We will get there, but at present
+
+  it's beyond the scope of `proof-of-principle, looking to see if we
+
+  can see the signal. We have tried to make this clearer in the text. }\\
+
+
+
+\noteq [Referee 2: Equ. 2.1] ``..the meaning of the parameter `x' is
+
+not described.''
+
+
+
+\notea{\bf \F}\\
+
+
+
+\noteq [Referee 2: Page 3] What is the typical cutoff value and the
+
+corresponding useful fraction of Cherenkov light? 
+
+
+
+\notea{\bf We have added the cutoff values.}\\
+
+
+
+
+\noteq [Referee 2: Page 3] `` `Probable case being...' Events with
+
+asymmetric electron energies are far more abundant.'' 
+
+
+
+\notea{\bf \FT}\\
+
+
+
+
+\noteq [Referee 2: Page 4] `` `Fully absorbing' ''. How are results
+
+influenced by deviations from this hypothesis?''
+
+
+
+\notea{\bf This is a level of detail well beyond what we've done so
+
+  far; once we have a real detector design and a full simulation it
+
+  can be addressed, but at this point devoting effort to it 
+
+doesn't seem productive.}\\
+
+
+
+\noteq [Referee 2: Page 4] ``Single 5 MeV electrons''.  
+
+
+
+\notea{\bf \F}\\
+
+
+
+
+
+\noteq [Referee 2: Page 4] ``I believe the `realistic' analysis
+
+mentioned here is indispensable ..for this process'' 
+
+
+
+\notea{\bf We agree, and are working on it. It isn't easy, or,
+
+  unfortunately, fast compared to a post-doc tenure.}\\
+
+
+
+
+
+\noteq [Referee 2: Page 6] ``The dependence on the position and the
+
+corresponding transit time variations cannot in my opinion be neglected.'' 
+
+
+
+\notea{\bf This part of the paper describes a simplified test simulation (where the photodetector TTS was switched off) to extract the time scales of various effects. We made changes in the text to make this clear.}\\
+
+
+
+
+
+\noteq [Referee 2: Figure 3] `` This figure is very interesting
+
+to understand the capacity of the method to maintain directionality
+
+information... The comparison with a single event (or equivalently the
+
+distribution of the variances) and the distribution for 1 MeV
+
+electrons would improve to understand also the limits/power of the method'' 
+
+
+
+\notea{\bf  We have added to what is now figure 4 the distributions for the two lower energies. We think this is a nice illustration of the limits/power of the method.}\\
+
+
+
+
+
+\noteq [Referee 2: reconstruction] ``It is not clear if limiting the
+
+reconstruction to Cherenkov photons improve reconstruction'' 
+
+
+
+\notea{\bf Yes, we agree. In this paper we were focussing on the Cherenkov photons as a simple way to apply direction reconstruction algorithms. In the future we will work to reconstruct position and direction simultaneously from the scintillation and Cherenkov light.}\\
+
+\end{document}
+
+
+
+\noteq [Referee 1] 
+
+\notea{\bf }\\
+
+
+

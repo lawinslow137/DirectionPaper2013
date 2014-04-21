@@ -1,0 +1,260 @@
+\documentclass[11pt]{article}
+
+\usepackage[usenames,dvips]{pstcol}
+
+\usepackage{color}
+
+\usepackage{amssymb}
+
+\usepackage{amsmath}
+
+\usepackage{graphicx,color}
+
+%
+
+%\input{symbols.tex}
+
+%
+
+\newcounter{question}
+
+\newcommand{\noteq}{{\vskip0.1in\bf \large \color{red} [Q:{\color{black}\addtocounter{question}{1}\arabic{question}}]~}}
+
+\newcommand{\noteQ}{{\bf \LARGE \color{blue} [Q: {\color{black}\addtocounter{question}{1}\arabic{question}}]~}}
+
+\newcommand{\notea}{{\bf \large \color{red} [A]~}}
+
+\newcommand{\noteA}{{\bf \LARGE \color{blue} [A]~}}
+
+\newcommand{\noteqq}[1]{{\bf \large \color{red} [Q: {\color{black}#1}]~}}
+
+\newcommand{\noteaa}[1]{{\bf \large \color{red} [A: {\color{black}#1}]~}}
+
+%
+
+\textwidth 6.5in
+
+\textheight 9.4in
+
+\topmargin -0.8in
+
+\oddsidemargin 0.0in
+
+\evensidemargin 0.0in
+
+\parindent 0.0in
+
+\def\baselinestretch{1.0}
+
+\def \Russ {Translated from Russian. Fixed. Thanks.}
+
+\def \F    {Fixed.}
+
+\def \FT   {Fixed. Thanks.}
+
+\def \D    {Done.}
+
+\def \AP   {Basically Stylistic- Author's Prerogative.}
+
+
+
+\begin{document}
+
+
+
+\begin{flushright}
+
+\today
+
+\end{flushright}
+
+%----------------------------------------------------------------
+
+
+
+Dear JINST Editors,\\
+
+
+
+\parindent 1.0in
+
+
+
+We thank the referees again for their very helpful and knowledgeable
+comments. We have made all the minor changes that were suggested by referee 1 and referee 2. 
+
+The remaining point to discuss is the title of the paper, \textit{Measuring directionality in double-beta decay and neutrino interactions with kiloton-scale scintillation detectors}.  We feel that the title indicates that we will be developing a method to measure direction and  the title guides the reader to what type of event we will be proposing to reconstruct, events with $\sim$MeV energies. It is important to note that reconstruction of $\sim$GeV events in scintillating detectors has been tackled by other groups and we reference their work in this publication. 
+
+Referee 2 says ``I believe the title is sending a different message to the reader, indicating the measurement of (low energy) particle directionality as a powerful tool to improve the performance of experiments on neutrino interactions or double-beta decay."  In order to keep the title, Referee 2 requests that we address in detail the kinematics of the interactions, the Cherenkov threshold, and the spatial distribution of the decays.  We have addressed part of this request by including the number of electrons above the Cherenkov threshold and above 1.4~MeV in $^{116}$Cd neutrinoless double beta decay events. However, to address these issues further we would need to do a significant amount of work on the reconstruction algorithm. We feel goes beyond the proof of principle paper we were intending. If the editors feel strongly that we should change the title, we can, but we believe it is the correct title for the paper. 
+
+Below we list the referee requests and changes in detail.\\ \\
+
+\parindent 3.0in
+
+                
+
+    Sincerely,\\
+
+
+
+\parindent 4.0in
+
+
+
+		         Lindley Winslow, for the Authors
+
+
+
+\parindent 0.0in
+
+
+
+%\begin{verbatim}
+
+%\end{verbatim}
+
+{\bf Referee 1: }
+
+\noteq [Referee 1 1) Organization] ``Please consider organizing the paper along these items/subsections be-
+low (or others equivalent), in order to avoid a pure sequential enumeration
+of (disconnected) sections''
+
+\notea{\bf We have changed the organization.}\\
+
+
+\noteq [Referee 1: 2) Figures] ``In general, the figures are not really easy to find'' 
+
+\notea{\bf  \F~We have worked on the figure placement}\\
+
+\noteq [Referee 1: 3) ] ``it is very difficult for an outsider to understand why the authors are so attached to cos(theta)
+in Fig.7.'' 
+
+\notea{\bf We have removed Fig. 7. We were not attached to the figure.}\\
+
+{\bf Referee 1: Specific Comments}
+
+\noteq [Referee 1:  Abstract and Conclusions] ``Develop a technique probably too strong: ”we propose a technique” I would say. Developing it will take some more time, to my understanding...'' 
+
+\notea{\bf \FT}\\
+
+\noteq [Referee 1:  Abstract and Conclusions] ``Generally, I suggest not to assume that everybody understands what TTS (or even what transit-time spread) is, specially outside a context. In the figures, one could add *photo-detector* transit-time spread, for instance.''
+
+\notea{\bf \FT}\\
+
+\noteq [Referee 1:  Abstract and Conclusions] ``Fig. 3 EPS$\rightarrow$PEs''
+
+\notea{\bf \FT}\\
+
+\noteq [Referee 1:  Page 7, Top] ``We note that due to scattering the final... $\rightarrow$one could
+add Coulomb scattering since the word scattering was used before in other
+context.'' and "A bit later: has a distance from... $\rightarrow$travels a distance from''
+
+\notea{\bf \FT}\\
+
+\noteq [Referee 1:  Page 7, Bottom] ``after the TTS resolution has been applied $\rightarrow$probably
+rephrase.''
+
+\notea{\bf \D}\\
+
+\noteq [Referee 1:  section 4:] ``truth information $\rightarrow$’MC truth’ information.''
+
+\notea{\bf \FT}\\
+
+\noteq [Referee 1:  section 4:] ``For the default simulation case... $\rightarrow$I am fine, but it is not easy to re-
+member all details and a table may help.''
+
+\notea{\bf We have added a table.}\\
+
+\noteq [Referee 1:  Fig. 5(Left)]  ``Some strange points appear in between the p x(y,z)/p lines...''
+
+\notea{\bf  \FT}\\
+
+\noteq [Referee 1:  Fig. 5(Top)]  ``Fig. 5(Top) $\rightarrow$Fig. 5(Left).''
+
+\notea{\bf \FT}\\
+
+\noteq [Referee 1:  Conclusions]  ``We have developed a technique $\rightarrow$not quite''
+
+\notea{\bf Changed to $\rightarrow$ We have proposed..}\\
+
+\noteq [Referee 1:  Conclusions]  ``370nm $\rightarrow$for pseudocumene''
+
+\notea{\bf Added for a typical scintillator.}\\
+
+\noteq [Referee 1:  Conclusions]  ``All light shorter $\rightarrow$with wavelength shorter''
+
+\notea{\bf \D}\\
+
+\noteq [Referee 1:  Conclusions]  ``as a part $\rightarrow$as part?''
+
+\notea{\bf \D}\\
+
+\noteq [Referee 1:  Conclusions]  ``TTS $\rightarrow$Do not use acronym here, for sure, at least not only.''
+
+\notea{\bf \D}\\
+
+\noteq [Referee 1:  Conclusions]  ``Similarly the mean cos(theta)... please see my comment above on this re-
+gard.''
+
+\notea{\bf \F~We have removed this line as it does not add any information.}\\
+
+\noteq [Referee 1:  Conclusions]  ``We plan to continue work on the topic $\rightarrow$please address what you plan to do
+very shortly and what future steps are.''
+
+\notea{\bf \F~We have added a sentence about our plans.}\\
+
+\noteq [Referee 1:  Conclusions]  ``wherever$\rightarrow$whenever?'
+
+\notea{\bf \D}\\
+
+{\bf Referee 2: }
+
+\noteq [Referee 2:  Physics Case]  ``The reference to the Gotthard experiment (in which the identification of the two electron tracks
+was based on a different principle) is probably not straightforward and
+should be made more transparent.''
+
+\notea{\bf \F~We are now more explicit that this is a different technology.}\\
+
+\noteq [Referee 2:  Physics Case]  ``5 MeV, head to head single electrons: the authors have added 2 more
+examples at lower energies. These are more appropriate for double-beta
+decay and provide useful information.''
+
+\notea{\bf  We are glad that they are useful.}\\
+
+\noteq [Referee 2:  Physics Case]  ``Cherenkov thresholds: a mention to the inefficiency in the identification
+of both electron tracks would be worth."
+
+\notea{\bf \D~We have calculated the efficiency for $^{116}$Cd and put that with the description of the first figure. A more detailed study is part of our future work.}\\
+
+\noteq [Referee 2:  Page 5, line 3 from bottom] `` ``greater than 20 m'' ...The conclusion is
+reasonable for an event originating in the center of the detector. The
+situation could be substantially different for (a large fraction of) events
+originating far from the center (close to the balloon surface) or larger
+scale detectors.''
+
+\notea{\bf \D~We now note that these effects will become important with uniformly distributed and lower energy events.}\\
+
+\noteq [Referee 2:  Caption to Figure 3.]  ``I understand this is probably not very relevant
+but I assume that the 1000 electrons generation is carried out in the
+same conditions described for Figure 1. If this is the case maybe it
+would be worth to specifiy it.''
+
+\notea{\bf \D~We now specify that these are single electrons moving in the x-direction.}\\
+
+\noteq [Referee 2:  Page 5, line 2.] ``What is the main effect of incomplete coverage? Simply
+a lowering of the measured number of photons?"
+
+\notea{\bf \D~We now specify that a uniform decrease in coverage would simply lower the measured number of photons.}\\
+
+\noteq [Referee 2: Page 8, line 4 from bottom] ``even at 1.4 MeV” looks a quite strong
+statement taken into account that this is still a favorable condition in
+double-beta decay (one of the two electrons has always an energy in
+the interval 0-Q/2.)''
+
+\notea{\bf \D~We now note that the photon statistics will continue to drop as we head to lower energies.}\\
+
+\end{document}
+
+
+
+
