@@ -188,7 +188,11 @@ possible to separate the directional Cherenkov light and the isotropic
 scintillation light, and then to reconstruct the direction of the
 initial particle.
 
-In $0\nu\beta\beta$
+In $0\nu\beta\beta$, the electrons emerge with a combined energy equal to the endpoint of the particular isotope's Q-value. The individual electrons come out with a distribution of energies and angular correlations. The most probable being equal division of energy between the back-to-back electrons\cite{phasespace} as is shown in FIG.~\ref{detector_view} for an example $^{116}$Cd $0\nu\beta\beta$ event. Since the decay half-life is proportional to the phase-space factor, isotope's with higher Q-values are preferred and due to backgrounds from the daughters of the $^{238}$U and $^{232}$Th decay chains those with Q-values at or above 2.6~MeV at most often considered for $0\nu\beta\beta$ searches. There are hundreds of candidate $0\nu\beta\beta$ isotopes\cite{tabledbb}, but only a handful with large Q-values.  Most of the high Q-value candidates have been considered as a dopant for a liquid scintillator: $^{150}$Nd(Q=3.367~MeV)\cite{minfang,nd1}, $^{96}$Zr(Q=3.350~MeV)\cite{zr1},  $^{100}$Mo(Q=3.034~MeV)\cite{mo1}, $^{82}$Se(Q=3.350~MeV)\cite{qdot}, $^{116}$Cd(Q=2.802~MeV)\cite{qdot, cd1}, $^{130}$Te(Q=2.533~MeV)\cite{qdot, biller}, $^{136}$Xe(Q=2.479~MeV)\cite{KZ0nu} and $^{124}$Sn(Q=2.29~MeV)\cite{sn1}. Xenon gas readily dissolves into liquid scintillator. For the other isotopes, the correct organometallic compound needs to be found that produces a stable scintillator with a long attenuation length in the wavelength region of interest. Recently, nanocrystals called quantum dots have been explored as an alternative method for doping scintillator\cite{qdot}. Quantum dots have interesting optical properties which are discussed further in Section~\ref{scintillator_emission_sec}.
+
+The reconstruction of the direction of the two simultaneous emitted $\sim$1.5~MeV electrons from the $0\nu\beta\beta$ decay is quite challenging. In this paper, we decided to start our directional studies with 5~MeV single electrons since reconstruction of direction in this energy range had never been achieved. This is a logical energy to use since this is where historically scintillating detectors become more practical than water Cherenkov detectors.  This is also an energy that is relevant for studies of $^{8}$B solar neutrinos and neutrino-electron elastic scattering measurement.
+
+
 
 \section{Geant4 Simulation}
 In order to study the effects relevant to directional
@@ -209,7 +213,7 @@ dispersion.
         \end{center}
 \end{figure}
 
-The detector geometry is a sphere of 6.5~m diameter filled with scintillator. FIG.~\ref{detector_view} shows the geometry and the Cherenkov light from an example $^{116}$Cd $0\nu\beta\beta$ event. The default
+The detector geometry is a sphere of 6.5~m diameter filled with scintillator, see FIG.~\ref{detector_view} shows the geometry and the Cherenkov light from an example $^{116}$Cd $0\nu\beta\beta$ event. The default
 scintillator properties have been chosen to match the KamLAND
 scintillator \cite{kamland2003}: 80~\% n-Dodecane, 20~\% Pseudocumene
 (1,2,4-Trimethylbenzene) and 1.52~g/l PPO (2,5-Diphenyloxazole). The
@@ -546,6 +550,6 @@ funds from University of California Los Angeles. The work at the University of C
 partially supported by DOE DE-SC0008172, NSF PHY-1066014, and the
 Grainger Foundation.
 
-\bibliography{DirectionBibliography} 
+\bibliography{DirectionBibliography_withLindley} 
 
 \end{document}
